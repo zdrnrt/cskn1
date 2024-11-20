@@ -119,7 +119,7 @@ const unique = [
 
 export default function Three() {
   return (
-    <div className="Tthree">
+    <div className="three">
       <div className="container three__content">
         <Title level={2}>AI Финансовый Терапевт: революционный подход к решению</Title>
         <Title level={3}>Этапы работы</Title>
