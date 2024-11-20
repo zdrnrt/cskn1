@@ -32,8 +32,12 @@ const results = [
 
 export default function Four() {
   const resultsList = results.map( (el, i) => <Tile key={i} props={el} /> )
-  return (<>
-    <Title level={2}>Результаты тестирования: гипотезы подтверждены</Title>
-    {resultsList}
-  </>);
+  return (
+    <div className="four">
+      <div className="container four-content">
+        <Title level={2}>Результаты тестирования: гипотезы подтверждены</Title>
+        {resultsList}
+      </div>
+    </div>
+  );
 }
