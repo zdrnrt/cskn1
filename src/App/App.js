@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
-import {Header, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten} from "./Component";
+import {Header, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Footer} from "./Component";
 import normalize from "normalize.css"
 import "./scss/app.scss"
 // let {Header} = Component;
@@ -21,6 +21,7 @@ export default function App() {
         <Nine />
         <Ten />
       </main>
+      <Footer />
     </>
   )
 }
