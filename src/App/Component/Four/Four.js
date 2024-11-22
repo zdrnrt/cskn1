@@ -1,7 +1,8 @@
 import React from "react";
 import { Typography, Button } from "antd";
 const { Title } = Typography;
-import Tile from "../../Shared/Tile"
+import Tile from "../../Shared/Tile";
+import "./Four.scss";
 
 const results = [
   {
@@ -31,13 +32,20 @@ const results = [
 ];
 
 export default function Four() {
-  const resultsList = results.map( (el, i) => <Tile key={i} props={el} /> )
+  const resultsList = results.map( (el, i) => <Tile key={i} data={el} /> )
   return (
-    <div className="four">
-      <div className="container four-content">
-        <Title level={2}>Результаты тестирования: гипотезы подтверждены</Title>
-        {resultsList}
+    <section className="four section">
+      <div className="container">
+        <div className="four-content">
+          <Title level={2} className="subtitle four__title">Результаты тестирования: гипотезы подтверждены</Title>
+          <div className="four__results">
+            {resultsList}
+        </div>
+        <div className="four__controls">
+          <Button type="primary" size="large">Задать вопрос</Button>
+        </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
