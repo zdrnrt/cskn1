@@ -1,8 +1,8 @@
 import React from "react";
 import { Typography } from "antd";
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
 import Tile from "../../Shared/Tile"
-
+import "./Two.scss";
 
 const problemList = [
     {
@@ -29,17 +29,22 @@ const problemList = [
 ];
 
 export default function Two(){
-  const problems = problemList.map( (el, i) => <Tile key={i} props={el} />);
+  const problems = problemList.map( (el, i) => <Tile key={i} data={el} />);
   return (
-    <div className="two">
-      <div className="container two__content">
-        <Title>Национальная проблема, которую больше нельзя игнорировать</Title>
-        {problems}
-        <div>
+    <section className="two section">
+      <div className="container">
+        <div className="two__content">
+
+        <Title className="two__title" level={2}>Национальная проблема, которую больше нельзя игнорировать</Title>
+        <div className="two__problems">
+          {problems}
+        </div>
+        <Paragraph className="two__desctiption">
           Долги растут, а существующие решения только усугубляют проблему: банки выдают новые кредиты, МФО — займы под 300% годовых, а юристы продают банкротство. 
+        </Paragraph>
         </div>
       </div>
 
-    </div>
+    </section>
   )
 }

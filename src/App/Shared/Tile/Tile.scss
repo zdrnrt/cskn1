@@ -2,11 +2,10 @@
   &--default{
     flex-basis: 100%;
     @media (min-width: 768px) {
-      flex-basis: 33%;
+      flex-basis: calc(100% / 3);
     }
     .tile__title{
-      margin-bottom: 1rem;
-      // margin-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
       color: var(--cl-tile-blue);
       font-size: 1.875rem;
       font-weight: 500;

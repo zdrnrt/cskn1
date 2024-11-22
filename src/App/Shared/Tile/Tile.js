@@ -2,7 +2,6 @@ import React from "react";
 import "./Tile.scss";
 
 export default function Tile(props) {
-  console.log(props);
   const type = props?.type || "default";
   const { title, description, steps } = props.data;
   return (
