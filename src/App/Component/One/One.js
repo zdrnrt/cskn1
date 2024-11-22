@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Typography } from "antd";
 const { Title, Paragraph } = Typography;
 import Tile from "../../Shared/Tile"
+import macPic from "../../../img/mac.jpg"
 
 const plusesList = [
   {
@@ -27,6 +28,10 @@ export default function One(){
         <Title className="one__title">ЦСКН1 — первый в мире AI-powered финансовый терапевт</Title>
         <Paragraph>Создаём новую индустрию на рынке в 14.5 трлн рублей с ежегодным ростом 15%</Paragraph>
         <div>{pluses}</div>
+        <div className="one__video video">
+          <iframe class="video__iframe"></iframe>
+          <img src={macPic} alt="mac"></img>
+        </div>
         <div>
           <Button>Скачать презентацию</Button>
           <Button>Написать основателю</Button>

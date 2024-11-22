@@ -1,6 +1,25 @@
 :root{
   --cl-main: #f00;
 }
+
+// @font-face {
+//   font-family: 'Inter';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url('./font/Inter.ttf') format('ttf');
+// }
+
+body{
+    font-family: "Inter", serif;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
 .container{
   padding-left: 20px;
   padding-right: 20px;
