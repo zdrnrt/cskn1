@@ -1,4 +1,9 @@
 .two{
+  &.section{
+    @media (min-width: 1200px){
+      padding-bottom: 3rem;
+    }
+  }
   & .two__title{
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
@@ -10,10 +15,10 @@
       font-size: 2rem;
     }
   }
-  & .one__description{
+  & .two__description{
     margin-bottom: 3rem;
-    color: var(--cl-secondary);
-    font-size: 1.25rem;
+    font-size: 0.875rem;
+    color: var(--cl-additional);
     text-align: center;
   }
   &__problems{
@@ -43,10 +48,5 @@
         font-size: 1rem;
       }
     }
-  }
-  &__description{
-    text-align: center;
-    font-size: 0.875rem;
-    color: var(--cl-additional);
   }
 }

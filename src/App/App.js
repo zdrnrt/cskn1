@@ -42,8 +42,8 @@ export default function App() {
       <main className="app">
         <One />
         <Two />
-        {/* 
         <Three />
+        {/* 
         <Four />
         <Five />
         <Six />

@@ -1,133 +1,146 @@
 import React from "react";
 import { Typography, Button } from "antd";
-const { Title } = Typography;
+const { Title, Paragraph } = Typography;
+import "./Three.scss";
+import Tile from "../../Shared/Tile"
 
 const steps = [
-{
-  title: 'Автоматическая диагностика',
-  steps: [
-   'AI-анализ финансового состояния.',
-    'Оценка кредитной нагрузки.',
-    'Выявление первопричин проблем.'
-  ]
-},
-{
-  title: 'Персональный план',
-  steps: [
-   'Разработка стратегии.',
-    'Пошаговый алгоритм действий.',
-    'Расчет сроков и результатов.'
-  ]
-},
-{
-  title: 'Подбор специалистов',
-  steps: [
-   'Проверенные партнеры.',
-    'Оптимальные решения.',
-    'Контроль качества услуг.'
-  ]
-},
-{
-  title: 'Сопровождение',
-  steps: [
-   'Мониторинг реализации.',
-    'Корректировка плана.',
-    'Поддержка 24/7.'
-  ]
-}
+  {
+    title: "1. Автоматическая диагностика",
+    steps: [
+      "AI-анализ финансового состояния.",
+      "Оценка кредитной нагрузки.",
+      "Выявление первопричин проблем.",
+    ],
+  },
+  {
+    title: "2. Персональный план",
+    steps: [
+      "Разработка стратегии.",
+      "Пошаговый алгоритм действий.",
+      "Расчет сроков и результатов.",
+    ],
+  },
+  {
+    title: "3. Подбор специалистов",
+    steps: [
+      "Проверенные партнеры.",
+      "Оптимальные решения.",
+      "Контроль качества услуг.",
+    ],
+  },
+  {
+    title: "4. Сопровождение",
+    steps: [
+      "Мониторинг реализации.",
+      "Корректировка плана.",
+      "Поддержка 24/7.",
+    ],
+  },
 ];
 
 const stack = [
-{
-  icon: '',
-  title: 'AI/ML ядро',
-  steps: [
-
-    'GPT-агенты для коммуникации',
-    'Нейросети для анализа данных',
-    'Предиктивная аналитика'
-  ]
-},
-{
-  icon: '',
-  title: 'Автоматизация',
-  steps: [
-
-    '24/7 доступность',
-    'Масштабируемость',
-    'Минимум человеческого фактора'
-  ]
-},
-{
-  icon: '',
-  title: 'Безопасность',
-  steps: [
-
-    'Шифрование данных',
-    'Защита персональной информации',
-    'Compliance со всеми требованиями'
-  ]
-},
-{
-  icon: '',
-  title: 'Интеграции',
-  steps: [
-    'CRM-системы',
-    'Платёжные сервисы',
-    'Партнёрский API'
-  ]
-},
-{
-  icon: '',
-  title: 'Аналитика',
-  steps: [
-    'Мониторинг метрик',
-    'Оптимизация процессов',
-    'Data-driven решения'
-  ]
-},
-{
-  icon: '',
-  title: 'Масштабируемость',
-  steps: [
-    'Cloud-native архитектура',
-    'Микросервисы',
-    'Балансировка нагрузки'
-  ]
-}
+  {
+    icon: "brain",
+    title: "AI/ML ядро",
+    steps: [
+      "GPT-агенты для коммуникации",
+      "Нейросети для анализа данных",
+      "Предиктивная аналитика",
+    ],
+  },
+  {
+    icon: "gear",
+    title: "Автоматизация",
+    steps: [
+      "24/7 доступность",
+      "Масштабируемость",
+      "Минимум человеческого фактора",
+    ],
+  },
+  {
+    icon: "shield",
+    title: "Безопасность",
+    steps: [
+      "Шифрование данных",
+      "Защита персональной информации",
+      "Compliance со всеми требованиями",
+    ],
+  },
+  {
+    icon: "dots",
+    title: "Интеграции",
+    steps: ["CRM-системы", "Платёжные сервисы", "Партнёрский API"],
+  },
+  {
+    icon: "chart",
+    title: "Аналитика",
+    steps: [
+      "Мониторинг метрик",
+      "Оптимизация процессов",
+      "Data-driven решения",
+    ],
+  },
+  {
+    icon: "step",
+    title: "Масштабируемость",
+    steps: [
+      "Cloud-native архитектура",
+      "Микросервисы",
+      "Балансировка нагрузки",
+    ],
+  },
 ];
 
 const unique = [
   {
-    icon: '',
-    title: 'Непредвзятость',
-    description: 'Искусственный интеллект анализирует ситуацию  объективно, без эмоций и личной выгоды.'
+    icon: "scale",
+    title: "Непредвзятость",
+    description:
+      "Искусственный интеллект анализирует ситуацию  объективно, без эмоций и личной выгоды.",
   },
   {
-    icon: '',
-    title: 'Системность',
-    description: 'Комплексный подход к решению проблем с учётом  всех факторов и долгосрочных последствий.'
+    icon: "puzzle",
+    title: "Системность",
+    description:
+      "Комплексный подход к решению проблем с учётом  всех факторов и долгосрочных последствий.",
   },
   {
-    icon: '',
-    title: 'Масштабируемость',
-    description: 'Неограниченные возможности роста без пропорционального увеличения расходов на персонал.'
-  }
-
-  
+    icon: "segment",
+    title: "Масштабируемость",
+    description:
+      "Неограниченные возможности роста без пропорционального увеличения расходов на персонал.",
+  },
 ];
 
 export default function Three() {
+  const stepsList = steps.map( (el, i) => <Tile type="steps" key={i} data={el} />);
+  const stackList = stack.map( (el, i) => <Tile type="steps" key={i} data={el} />);
+  const uniqueList = unique.map( (el, i) => <Tile type="steps" key={i} data={el} />);
   return (
-    <div className="three">
-      <div className="container three__content">
-        <Title level={2}>AI Финансовый Терапевт: революционный подход к решению</Title>
-        <Title level={3}>Этапы работы</Title>
-        <Title level={3}>Технологический стек</Title>
-        <Title level={3}>Уникальные преимущества</Title>
-        <div><Button>Задать вопрос</Button></div>
+    <section className="three section">
+      <div className="container">
+        <div className="three__content">
+          <Title level={2} className="subtitle three__title">
+            AI Финансовый Терапевт: революционный подход к решению
+          </Title>
+          <Title level={3} className="part-title three__part-title">Этапы работы</Title>
+          <div className="three__steps">
+            {stepsList}
+          </div>
+          <Title level={3} className="part-title three__part-title">Технологический стек</Title>
+          <div className="three__stack">
+            {stackList}
+          </div>
+          <Title level={3} className="part-title three__part-title">Уникальные преимущества</Title>
+          <div className="three__stack">
+            {uniqueList}
+          </div>
+          <div className="three__controls">
+            <Button type="primary" size="large">Задать вопрос</Button>
+          </div>
+        </div>
       </div>
-    </div>
-
-  )
-};
+    </section>
+  );
+}

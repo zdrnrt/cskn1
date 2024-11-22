@@ -4,7 +4,7 @@ const { Title, Paragraph } = Typography;
 import Tile from "../../Shared/Tile"
 import "./Two.scss";
 
-const problemList = [
+const problem = [
     {
       title: '30.2 трлн ₽',
       description: 'общий долг населения РФ'
@@ -29,17 +29,17 @@ const problemList = [
 ];
 
 export default function Two(){
-  const problems = problemList.map( (el, i) => <Tile key={i} data={el} />);
+  const problemList = problem.map( (el, i) => <Tile key={i} data={el} />);
   return (
     <section className="two section">
       <div className="container">
         <div className="two__content">
 
-        <Title className="two__title" level={2}>Национальная проблема, которую больше нельзя игнорировать</Title>
+        <Title className="subtitle two__title" level={2}>Национальная проблема, которую больше нельзя игнорировать</Title>
         <div className="two__problems">
-          {problems}
+          {problemList}
         </div>
-        <Paragraph className="two__desctiption">
+        <Paragraph className="two__description">
           Долги растут, а существующие решения только усугубляют проблему: банки выдают новые кредиты, МФО — займы под 300% годовых, а юристы продают банкротство. 
         </Paragraph>
         </div>

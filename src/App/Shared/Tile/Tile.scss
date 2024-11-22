@@ -17,10 +17,33 @@
       color: var(--cl-tile-grey);
     }
   }
+  &--steps{
+    .tile__title{
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: var(--cl-secondary);
+    }
+  }
   &__title{
     margin: 0;
+    &--icon{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
   }
   &__description{
     margin: 0;
+  }
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    color: var(--cl-secondary);
+    font-size: 1rem;
+    line-height: 150%;
   }
 }

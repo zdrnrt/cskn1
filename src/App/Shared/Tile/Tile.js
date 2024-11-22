@@ -1,14 +1,31 @@
 import React from "react";
 import "./Tile.scss";
+import Icons from "../../Icon";
+
+
+function Icon({name}) {
+  console.log('icon', name);
+  return (
+    <div className="tile__icon">
+      <img src={Icons[name]} alt={name}></img>
+    </div>
+  )
+}
+
 
 export default function Tile(props) {
   const type = props?.type || "default";
-  const { title, description, steps } = props.data;
+  const { title, description, steps, icon } = props.data;
+  const stepsList = steps && steps.map( (el, i) => <li key={i}>{el}</li>)
+  // const iconItem = icon && <Icon props={icon} />
   return (
     <div className={`tile tile--${type}`}>
-      <p className="tile__title">{title}</p>
+      <div className={`tile__title ${icon && 'tile__title--icon'}`}>
+        {icon && <Icon name={icon}/>}
+        {title}
+      </div>
       {description && <p className="tile__description">{description}</p>}
-      {steps && <p className="tile__description">{steps}</p>}
+      {stepsList && <ul className="tile__list">{stepsList}</ul>}
     </div>
   );
 }
