@@ -9,7 +9,9 @@ module.exports = {
 	output: {
 		filename: 'main.[contenthash].js',
 		path: path.resolve(__dirname, 'app/'),
+		assetModuleFilename: path.join('asset', '[name].[contenthash][ext]'),
 	},
+  devtool: "source-map",
 	module: {
 		rules: [
 			{
@@ -20,6 +22,24 @@ module.exports = {
 			{
 				test: /\.(scss|css)$/,
 				use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource',
+				// use: [
+				// 	{
+				// 		loader: 'file-loader?name=asset/img/[name].[ext]'
+				// 	},
+				// ]
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+				// use: [
+        //   {
+        //     loader: 'file-loader?name=asset/fonts/[name].[ext]'
+        //   },
+        // ]
 			},
 		],
 	},

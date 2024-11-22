@@ -8,10 +8,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header__content">
-        <div>ЦСКН1</div>
-        <div>
-          <Link>Скачать презентацию</Link>
-          <Button type="primary" href="">Написать основателю</Button>
+        <a href="/" className="header__logo">ЦСКН1</a>
+        <div className="header__controls">
+          <Button type="link" size="large">Скачать презентацию</Button>
+          <Button type="primary" size="large" href="">Написать основателю</Button>
         </div>
       </div>
     </header>
