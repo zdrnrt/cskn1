@@ -3,6 +3,7 @@ import { Typography, Button } from "antd";
 const { Title, Paragraph } = Typography;
 import "./Three.scss";
 import Tile from "../../Shared/Tile"
+import Icons from "../../Icon";
 
 const steps = [
   {
@@ -113,8 +114,24 @@ const unique = [
   },
 ];
 
+function Arrow(){
+  return (
+    <div className="three__arrow">
+      <img src={Icons.arrow} alt=""></img>
+    </div>
+  )
+}
+
 export default function Three() {
-  const stepsList = steps.map( (el, i) => <Tile type="steps" key={i} data={el} />);
+  const stepsList = [];
+  // steps.map( (el, i) => <Tile type="steps" key={i} data={el} />);
+  steps.forEach( (el, i) => {
+    stepsList.push( <Tile type="steps" key={i} data={el} /> );
+    if (i != steps.length - 1){
+      stepsList.push( <Arrow />);
+    }
+
+  })
   const stackList = stack.map( (el, i) => <Tile type="steps" key={i} data={el} />);
   const uniqueList = unique.map( (el, i) => <Tile type="steps" key={i} data={el} />);
   return (

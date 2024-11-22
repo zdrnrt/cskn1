@@ -1,3 +1,4 @@
+import arrow from "../../img/icons/arrow.svg";
 import book from "../../img/icons/book.svg";
 import brain from "../../img/icons/brain.svg";
 import camera from "../../img/icons/camera.svg";
@@ -21,6 +22,7 @@ import user from "../../img/icons/user.svg";
 import vector from "../../img/icons/vector.svg";
 
 export default {
+  arrow,
   book,
   brain,
   camera,
