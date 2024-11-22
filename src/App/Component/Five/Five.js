@@ -2,6 +2,8 @@ import React from "react";
 import { Typography, Button } from "antd";
 const { Title } = Typography;
 import Tile from "../../Shared/Tile";
+import Icons from "../../Icon";
+import "./Five.scss";
 
 const steps = [
   {
@@ -21,9 +23,11 @@ const steps = [
     steps: ["Подбор специалистов", "Контроль качества", "Сопровождение"],
   },
 ];
+
 const model = [
   {
     title: "Модель работы",
+    icon: 'gear',
     steps: [
       "Оплата за лид (ср. чек 18.000₽)",
       "Квалификация через AI",
@@ -33,6 +37,7 @@ const model = [
   },
   {
     title: "Типы партнеров",
+    icon: 'user',
     steps: [
       "Банки и КПК",
       "Юридические компании",
@@ -65,18 +70,47 @@ const financials = [
   },
 ];
 
-export default function Five() {
+
+function Arrow(){
   return (
-    <div className="five">
-      <div className="container five__content">
-        <Title level={2}>Двойная монетизация: устойчивая модель роста</Title>
-        <Title level={3}>Партнерская экосистема</Title>
-        <Title level={3}>Финансовые показатели</Title>
-        <div>Цель за 6 лет занять 10% доли рынка</div>
-        <div>
-          <Button>Написать основателю</Button>
+    <div className="five__arrow">
+      <img src={Icons.arrow} alt=""></img>
+    </div>
+  )
+}
+
+export default function Five() {
+  const stepsList = [];
+  steps.forEach( (el, i) => {
+    stepsList.push( <Tile type="money" key={i} data={el} /> );
+    if (i != steps.length - 1){
+      stepsList.push( <Arrow key={i+5} />);
+    }
+  })
+  const modelList = model.map( (el, i) => <Tile type="steps" key={i} data={el} />)
+  const financialsList = financials.map( (el, i) => <Tile type="financial" key={i} data={el} />)
+  return (
+    <section className="five section">
+      <div className="container">
+      <div className="five__content">
+        <Title className="subtitle five__title" level={2}>Двойная монетизация: устойчивая модель роста</Title>
+        <div className="five__steps">
+          {stepsList}
+        </div>
+        <Title className="part-title five__part-title" level={3}>Партнерская экосистема</Title>
+        <div className="five__model">
+          {modelList}
+        </div>
+        <Title className="part-title five__part-title" level={3}>Финансовые показатели</Title>
+        <div className="five__financial">
+          {financialsList}
+        </div>
+        <p className="five__target">Цель за 6 лет занять <span className="five__target--marked">10%</span> доли рынка</p>
+        <div className="five__controls">
+          <Button type="primary" size="large">Написать основателю</Button>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }

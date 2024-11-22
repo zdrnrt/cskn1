@@ -128,10 +128,9 @@ export default function Three() {
   steps.forEach( (el, i) => {
     stepsList.push( <Tile type="steps" key={i} data={el} /> );
     if (i != steps.length - 1){
-      stepsList.push( <Arrow />);
+      stepsList.push( <Arrow key={i + 5} />);
     }
-
-  })
+  });
   const stackList = stack.map( (el, i) => <Tile type="steps" key={i} data={el} />);
   const uniqueList = unique.map( (el, i) => <Tile type="steps" key={i} data={el} />);
   return (

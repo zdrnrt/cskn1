@@ -1,0 +1,80 @@
+.five{
+  background-color: var(--cl-bg-section);
+  .five__title{
+    margin-bottom: 4.5rem;
+  }
+  &__steps{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.8rem;
+    @media (min-width: 1200px){
+      row-gap: 1.875rem;
+    }
+    .tile{
+      width: 300px;
+    }
+  }
+  &__model{
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+      gap: 10rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: auto;
+      }
+    }
+  }
+  &__financial{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: 300px;
+      }
+    }
+  }
+  &__arrow{
+    width: 2rem;
+    img{
+      width: 100%;
+      transform: rotate(90deg);
+    }
+  }
+  &__target{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    @media (min-width: 1200px){
+      margin-bottom: 6rem;
+    }
+    &--marked{
+      color: var(--cl-lightblue);
+    }
+  }
+  &__controls{
+    text-align: center;
+  }
+}

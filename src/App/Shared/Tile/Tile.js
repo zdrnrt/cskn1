@@ -17,10 +17,9 @@ export default function Tile(props) {
   const type = props?.type || "default";
   const { title, description, steps, icon } = props.data;
   const stepsList = steps && steps.map( (el, i) => <li key={i}>{el}</li>)
-  // const iconItem = icon && <Icon props={icon} />
   return (
     <div className={`tile tile--${type}`}>
-      <div className={`tile__title ${icon && 'tile__title--icon'}`}>
+      <div className={icon ? 'tile__title tile__title--icon' : 'tile__title'}>
         {icon && <Icon name={icon}/>}
         {title}
       </div>

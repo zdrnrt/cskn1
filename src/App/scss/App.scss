@@ -3,9 +3,12 @@
   --cl-secondary: #434343;
   --cl-additional: #8C8C8C;
   --cl-blue: #1677ff;
+  --cl-lightblue: #40a9ff;
   --cl-tile-blue: #69c0ff;
   --cl-tile-grey: #595959;
   --cl-bg-section: #FAFAFA;
+  --cl-bg-white: #FFFFFF;
+  --cl-border: #f0f0f0;
 }
 
 // @font-face {
@@ -22,7 +25,9 @@ body{
   color: var(--cl-primary);
   line-height: 120%;
 }
-
+body *{
+  box-sizing: border-box;
+}
 h1, h2, h3 {
   margin-top: 0;
 }
@@ -38,8 +43,6 @@ h3.part-title {
   text-align: center;
   color: var(--cl-secondary);
 }
-
-
 
 a {
   text-decoration: none;
