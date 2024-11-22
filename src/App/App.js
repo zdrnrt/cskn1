@@ -23,9 +23,12 @@ export default function App() {
     <ConfigProvider
       theme={{
         token: {
-          fontFamily: '"Inter", serif'
+          fontFamily: '"Inter", serif',
         },
         components: {
+          Typography: {
+            titleMarginTop: 0,
+          },
           Switch: {
             colorPrimary: "#ff4c2b",
             colorPrimaryHover: "#ff785f",
@@ -46,10 +49,11 @@ export default function App() {
         <Six />
         <Seven />
         <Eight />
-        <Nine /> */}
+        <Nine /> 
         <Ten />
+        */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </ConfigProvider>
   );
 }

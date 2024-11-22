@@ -1,6 +1,10 @@
 :root{
   --cl-primary: #262626;
+  --cl-secondary: #434343;
   --cl-blue: #1677ff;
+  --cl-tile-blue: #69c0ff;
+  --cl-tile-grey: #595959;
+  --cl-bg-section: #FAFAFA;
 }
 
 // @font-face {
@@ -12,15 +16,20 @@
 // }
 
 body{
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: var(--cl-primary);
   line-height: 120%;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
 h1 {}
 h2 {}
 h3 {}
+
+
 
 a {
   text-decoration: none;
@@ -37,9 +46,17 @@ button {
   @media (min-width: 1320px){
     padding-left: 0px;
     padding-right: 0px;
-
   }
-  @media (min-widt: 1440px){
+  @media (min-width: 1440px){
     
   }
+}
+.section{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @media (min-width: 1200px){
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
 }
