@@ -1,10 +1,11 @@
 import React from "react";
 import { Typography, Button } from "antd";
 const { Title } = Typography;
+import Tile from "../../Shared/Tile";
+import "./Eight.scss";
 
 const financials = [
   {
-
     title: 'Выручка (по годам)',
     steps: [
       '2025: 128.5 млн ₽',
@@ -79,15 +80,30 @@ const key = [
 
 
 export default function Eight() {
+  const financialsList = financials.map( (el, i) => <Tile type="digital" key={i} data={el}/>)
+  const unitsList = unit.map( (el, i) => <Tile type="digital" key={i} data={el}/>)
+  const keyList = key.map( (el, i) => <Tile type="digital" key={i} data={el}/>)
   return (
-    <section className="eight">
-      <div className="container eight__content">
-        <Title level={2}>Финансовые показатели и ключевые метрики роста</Title>
-        <Title level={3}>Финансовые прогнозы</Title>
-        <Title level={3}>Unit-экономика</Title>
-        <Title level={3}>Ключевые показатели</Title>
-        <div><Button>Скачать финдек</Button></div>
+    <section className="eight section">
+      <div className="container">
+      <div className=" eight__content">
+        <Title level={2} className="subtitle eight__title">Финансовые показатели и ключевые метрики роста</Title>
+        <Title level={3} className="part-title eight__part-title">Финансовые прогнозы</Title>
+        <div className="eight__list">
+          {financialsList}
+        </div>
+        <Title level={3} className="part-title eight__part-title">Unit-экономика</Title>
+        <div className="eight__list">
+          {unitsList}
+        </div>
+        <Title level={3} className="part-title eight__part-title">Ключевые показатели</Title>
+        <div className="eight__list">
+          {keyList}
+        </div>
+        <div className="eight__controls">
+          <Button type="primary" size="large">Скачать финдек</Button></div>
 
+      </div>
       </div>
     </section>
   )

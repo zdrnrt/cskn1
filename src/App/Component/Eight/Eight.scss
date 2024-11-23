@@ -1,0 +1,33 @@
+.eight{
+  background-color: var(--cl-bg-section);
+  .eight__title{
+    margin-bottom: 4rem;
+  }
+  .eight__part-title{
+    margin-bottom: 2rem;
+    @media (min-width: 1200px) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__list{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    @media (min-width: 1200px){
+      gap: 2.5rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: 300px;
+      }
+    }
+  }
+  &__controls{
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
