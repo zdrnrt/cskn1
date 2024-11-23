@@ -32,14 +32,15 @@ export default function One(){
         <div className="one__video video">
           <div className="video__content">
             <img></img>
-            <iframe className="video__iframe"></iframe>
+            <iframe className="video__iframe" src="https://www.youtube.com/embed/eqlNOi6KDig?si=mFMwDc6-TkFoctkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            {/* <iframe className="video__iframe"></iframe> */}
           </div>
           <img src={macPic} alt="mac" className="video__mac"></img>
         </div>
         <div className="one__pluses">{pluses}</div>
         <div className="one__controls">
           <Button size="large">Скачать презентацию</Button>
-          <Button type="primary" size="large">Написать основателю</Button>
+          <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
         </div>
         </div>
       </div>

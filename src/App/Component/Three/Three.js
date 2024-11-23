@@ -153,7 +153,7 @@ export default function Three() {
             {uniqueList}
           </div>
           <div className="three__controls">
-            <Button type="primary" size="large">Задать вопрос</Button>
+            <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Задать вопрос</Button>
           </div>
         </div>
       </div>

@@ -107,7 +107,7 @@ export default function Five() {
         </div>
         <p className="five__target">Цель за 6 лет занять <span className="five__target--marked">10%</span> доли рынка</p>
         <div className="five__controls">
-          <Button type="primary" size="large">Написать основателю</Button>
+          <Button type="primary" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank" size="large">Написать основателю</Button>
         </div>
       </div>
       </div>

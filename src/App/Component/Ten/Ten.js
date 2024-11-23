@@ -26,7 +26,7 @@ const social = [
 
 function Social({props}){
   return (
-    <a href={props.link} className="ten__social social">
+    <a href={props.link} target="_blank" className="ten__social social">
       <img src={Icon[props.icon]} className="social__icon" alt={props.name}></img>
     </a>
   )

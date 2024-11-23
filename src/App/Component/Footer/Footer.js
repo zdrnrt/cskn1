@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="footer__contacts footer-contacts">
             <div className="footer-contacts__title">Контакты</div>
             <div className="footer-contacts__list">
-              <div className="footer-contacts__item">Telegram: <Link type="link" href="" className="footer-contacts__link">@ArkadyShevchenko</Link></div>
+              <div className="footer-contacts__item">Telegram: <Link type="link" href="https://t.me/cskn_1" className="footer-contacts__link">@ArkadyShevchenko</Link></div>
               <div className="footer-contacts__item">Email: <Link  type="link" href="mailto:cskn24.7@gmail.com" className="footer-contacts__link">cskn24.7@gmail.com</Link> </div>
               <div className="footer-contacts__item"> Phone/WhatsApp: <Link type="link" href="tel:+7 953 590 6427" className="footer-contacts__link">+7 953 590 6427</Link> </div>
             </div>
@@ -39,9 +39,10 @@ export default function Footer() {
             <li>Финдек.</li>
             <li>Инвестиционный тизер.</li>
             <li>Информационная справка.</li>
+            <li>Инвестиционная презентация.</li>
           </ul>
           <div>
-            <Button type="link" size="large">Скачать материалы</Button>
+            <Button type="link" href="./files.zip" size="large">Скачать материалы</Button>
           </div>
         </div>
       </div>
