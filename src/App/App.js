@@ -29,12 +29,19 @@ export default function App() {
           Typography: {
             titleMarginTop: 0,
           },
-          Switch: {
-            colorPrimary: "#ff4c2b",
-            colorPrimaryHover: "#ff785f",
-            colorTextQuaternary: "#1677ff",
-            colorTextTertiary: "#4096ff",
+          Form: {
+            verticalLabelPadding: 6,
+            itemMarginBottom: 8,
+            // labelFontSize: 16,
+            fontSize: 16,
           },
+          TextArea: {
+            itemMarginBottom: 24,
+          },
+          Button: {
+            paddingBlockLG: 8,
+            paddingInlineLG: 16
+          }
         },
       }}
     >
@@ -49,9 +56,7 @@ export default function App() {
         <Seven />
         <Eight />
         <Nine /> 
-        {/* 
         <Ten />
-        */}
       </main>
       {/* <Footer /> */}
     </ConfigProvider>
