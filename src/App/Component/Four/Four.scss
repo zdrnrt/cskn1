@@ -14,17 +14,17 @@
       gap: 0;
     }
     @media (min-width: 1200px) {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .tile{
       @media (min-width: 768px) {
         padding: 1.5rem 0;
       }
       @media (min-width: 1200px) {
-        padding: 3.5rem 0;
+        padding: 3.5rem 0 5.5rem;
       }
       &__description{
-        max-width: 12rem;
+        // max-width: 12rem;
         margin: 0 auto;
         font-size: 1rem;
       }

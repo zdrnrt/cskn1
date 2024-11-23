@@ -84,6 +84,9 @@
       margin-bottom: 0;
       flex-basis: auto;
     }
+    & + .worker__invest{
+      margin-top: 2rem;
+    }
   }
   &__track{
     @media (min-width: 1200px){
@@ -117,9 +120,6 @@
 
 .skills{
   &__list{
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
     li + li {
       margin-top: 0.5rem;
     }
