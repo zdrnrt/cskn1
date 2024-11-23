@@ -1,0 +1,99 @@
+.six{
+  background-color: var(--cl-bg-section);
+  .six__title{
+    margin-bottom: 4rem;
+  }
+  
+  &__reality{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+      gap: 5rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: 300px;
+      }
+    }
+  }
+  &__digital{
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.8rem;
+    @media (min-width: 1200px){
+      row-gap: 2.85rem;
+    }
+    .tile{
+      width: 300px;
+    }
+  }
+  &__strategy{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+      gap: 5rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: 250px;
+      }
+    }
+  }
+  &__financial{
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    @media (min-width: 768px) {
+      margin-top: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .tile{
+      flex-basis: 100%;
+      @media (min-width: 1200px){
+        flex-basis: 300px;
+      }
+    }
+  }
+  &__arrow{
+    width: 2rem;
+    img{
+      width: 100%;
+      transform: rotate(90deg);
+    }
+  }
+  &__target{
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    @media (min-width: 1200px){
+      margin-bottom: 6rem;
+    }
+    &--marked{
+      color: var(--cl-lightblue);
+    }
+  }
+  &__controls{
+    padding-top: 2rem;
+    text-align: center;
+  }
+}

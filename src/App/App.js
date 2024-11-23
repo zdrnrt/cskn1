@@ -45,8 +45,8 @@ export default function App() {
         <Three />
         <Four />
         <Five />
-        {/* 
         <Six />
+        {/* 
         <Seven />
         <Eight />
         <Nine /> 

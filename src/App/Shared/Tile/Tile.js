@@ -2,9 +2,7 @@ import React from "react";
 import "./Tile.scss";
 import Icons from "../../Icon";
 
-
 function Icon({name}) {
-  console.log('icon', name);
   return (
     <div className="tile__icon">
       <img src={Icons[name]} alt={name}></img>

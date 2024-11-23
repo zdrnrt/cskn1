@@ -52,6 +52,20 @@
       list-style: none;
     }
   }
+  &--digital{
+    padding: 1rem;
+    background-color: var(--cl-bg-white);
+    border-radius: 0.5rem;
+    border: 1px solid var(--cl-border);
+    .tile__title{
+      color: var(--cl-tile-blue);
+      font-size: 1rem;
+    }
+    .tile__list{
+      margin-top: 0.85rem;
+      font-size: 0.85rem;
+    }
+  }
   &__title{
     margin: 0;
     font-weight: 500;
