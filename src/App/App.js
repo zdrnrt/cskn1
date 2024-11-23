@@ -28,6 +28,7 @@ export default function App() {
         components: {
           Typography: {
             titleMarginTop: 0,
+            titleMarginBottom: 24
           },
           Form: {
             verticalLabelPadding: 6,
@@ -58,7 +59,7 @@ export default function App() {
         <Nine /> 
         <Ten />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </ConfigProvider>
   );
 }

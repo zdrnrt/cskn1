@@ -115,7 +115,7 @@ function Founder({ props }) {
   return (
     <div className="seven__worker worker">
       <Preview props={props}/>
-      <div>
+      <div className="worker__info">
 
       <div className="worker__skill skills">
         <div className="worker__title">Ключевые компетенции</div>
@@ -147,7 +147,7 @@ function Worker({ props }) {
   return (
     <div className="seven__worker worker">
       <Preview props={props}/>
-      <div className="worder__skill skills">
+      <div className="worker__skill skills">
         <div className="worker__title">Компетенции</div>
         <ol className="skills__list">
           {skills}

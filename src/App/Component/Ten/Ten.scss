@@ -1,4 +1,7 @@
 .ten{
+  &.section{
+    padding-bottom: 4rem;
+  }
   .ten__title{
     margin-bottom: 4rem;
   }
@@ -34,17 +37,8 @@
 }
 
 .form{
-  .ant-form-item-label{
-    // padding-bottom: 0.375rem!important;
-  }
-  .ant-input{
-    // font-size: 1rem!important;
-  }
   .ant-form-item-required::before{
     content: none!important;
-  }
-  .form__input{
-    // margin-bottom: 1rem;
   }
   .form__submit{
     margin-top: 2rem;  

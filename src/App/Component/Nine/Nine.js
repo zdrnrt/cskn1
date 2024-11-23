@@ -87,7 +87,6 @@ const stages = [
 ];
 
 function Stage({props}){
-  console.log(props);
   const stepsList = props.steps.map( (el, i) => <Tile type="digital" key={i} data={el} />)
   return (
     <div className="nine__stage stage">

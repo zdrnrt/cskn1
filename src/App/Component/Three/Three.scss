@@ -17,30 +17,41 @@
   &__steps{
     margin: 0 auto 3rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
     @media (min-width: 768px) {
+      flex-flow: row wrap;
       margin-bottom: 4rem;
       gap: 0;
     }
-    .tile + .tile::before {
+    .tile {
+      width: 100%;
+      @media (min-width: 768px) {
+        width: auto;
+      }
       // content: "arrow"
+    }
+  }
+  &__arrow{
+    transform: rotate(90deg);
+    @media (min-width: 768px) {
+      transform: none;
     }
   }
   &__stack{
     max-width: 1040px;
-    margin: 0 auto;
+    margin: 0 auto 3.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
     @media (min-width: 768px) {
-      margin-bottom: 3.5rem;
     }
     .tile{
+      flex-basis: 100%;
       @media (min-width: 1200px){
         flex-basis: 320px;
       }

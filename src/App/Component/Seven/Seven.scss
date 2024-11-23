@@ -46,17 +46,30 @@
 
 .worker{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
+  @media (min-width: 768px){
+    justify-content: flex-start;
+
+  }
   @media (min-width: 1200px){
     gap: 2.5rem;
   }
+  &__info{
+    margin-bottom: 3rem;
+    flex-basis: 100%;
+    @media (min-width: 768px){
+      margin-bottom: 0;
+      flex-basis: auto;
+    }
+  }
   &__preview{
     flex-basis: 100%;
+    max-width: 15rem;
     @media (min-width: 1200px){
-      flex-basis: 240px;
+      flex-basis: 15rem;
     }
   }
   &__title{
@@ -66,6 +79,11 @@
   }
   &__skill{
     margin-bottom: 2rem;
+    flex-basis: 100%;
+    @media (min-width: 768px){
+      margin-bottom: 0;
+      flex-basis: auto;
+    }
   }
   &__track{
     @media (min-width: 1200px){
