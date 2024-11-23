@@ -140,7 +140,7 @@ export default function Six() {
           {techList}
         </div>
         <div className="six__controls">
-          <Button type="primary" size="large">Скачать презентацию</Button>
+          <Button type="primary" size="large" href="./cskn1-invest-presentation.pdf">Скачать презентацию</Button>
         </div>
         </div>
       </div>

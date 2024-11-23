@@ -39,7 +39,7 @@ export default function One(){
         </div>
         <div className="one__pluses">{pluses}</div>
         <div className="one__controls">
-          <Button size="large">Скачать презентацию</Button>
+          <Button size="large" href="./cskn1-invest-presentation.pdf">Скачать презентацию</Button>
           <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
         </div>
         </div>

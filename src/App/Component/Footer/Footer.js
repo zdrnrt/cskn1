@@ -39,7 +39,6 @@ export default function Footer() {
             <li>Финдек.</li>
             <li>Инвестиционный тизер.</li>
             <li>Информационная справка.</li>
-            <li>Инвестиционная презентация.</li>
           </ul>
           <div>
             <Button type="link" href="./files.zip" size="large">Скачать материалы</Button>
