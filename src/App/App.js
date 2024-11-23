@@ -48,8 +48,8 @@ export default function App() {
         <Six />
         <Seven />
         <Eight />
-        {/* 
         <Nine /> 
+        {/* 
         <Ten />
         */}
       </main>

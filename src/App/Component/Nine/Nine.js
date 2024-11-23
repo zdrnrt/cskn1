@@ -1,6 +1,8 @@
 import React from "react";
 import { Typography, Button } from "antd";
 const { Title } = Typography;
+import Tile from "../../Shared/Tile";
+import "./Nine.scss";
 
 const stages = [
   {
@@ -82,19 +84,36 @@ const stages = [
       }
     ]
   }
-]
+];
+
+function Stage({props}){
+  console.log(props);
+  const stepsList = props.steps.map( (el, i) => <Tile type="digital" key={i} data={el} />)
+  return (
+    <div className="nine__stage stage">
+      <Title level={4} className="stage__title">{props.title}</Title>
+      <div className="stage__steps">
+        {stepsList}
+      </div>
+    </div>
+  )
+}
 
 export default function Nine() {
+  const stagesList = stages.map( (el, i) => <Stage key={i} props={el}/> );
   return (
-    <section className="nine">
-      <div className="container nine__content">
-        <Title level={2}>Планы развития на 3 года: от старта до лидерства</Title>
-        <Title level={3}>Этапы развития</Title>
-        <Title level={4}>Год 1: запуск и развитие (2025)</Title>
-        <Title level={4}>Год 2: масштабирование (2026)</Title>
-        <Title level={4}>Год 3: международная экспансия (2027)</Title>
-        <div><Button>Задать вопрос</Button></div>
+    <section className="nine section">
+      <div className="container">
+      <div className="nine__content">
+        <Title level={2} className="subtitle nine__title">Планы развития на 3 года: от старта до лидерства</Title>
+        <Title level={3} className="part-title nine__part-title">Этапы развития</Title>
+        {stagesList}
+        
+        <div className="nine__controls">
+          <Button type="primary" size="large">Задать вопрос</Button>
+        </div>
 
+      </div>
       </div>
     </section>
   )

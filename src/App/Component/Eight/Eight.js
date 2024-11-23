@@ -86,7 +86,7 @@ export default function Eight() {
   return (
     <section className="eight section">
       <div className="container">
-      <div className=" eight__content">
+      <div className="eight__content">
         <Title level={2} className="subtitle eight__title">Финансовые показатели и ключевые метрики роста</Title>
         <Title level={3} className="part-title eight__part-title">Финансовые прогнозы</Title>
         <div className="eight__list">
