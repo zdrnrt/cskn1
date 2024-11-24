@@ -101,7 +101,7 @@ export default function Eight() {
           {keyList}
         </div>
         <div className="eight__controls">
-          <Button type="primary" size="large" href="./cskn1-invest-presentation.pdf">Скачать финдек</Button></div>
+          <Button type="primary" size="large" href="./files/cskn1-findek.pdf">Скачать финдек</Button></div>
 
       </div>
       </div>

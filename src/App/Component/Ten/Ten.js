@@ -20,7 +20,7 @@ const social = [
   {
     name: 'Linkedin',
     icon: 'linkedin',
-    link: 'https://www.instagram.com/arkadiyshevchenko/profilecard'
+    link: 'http://www.linkedin.com/in/arkadiishevchenko'
   }
 ];
 

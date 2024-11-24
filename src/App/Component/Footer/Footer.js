@@ -41,7 +41,7 @@ export default function Footer() {
             <li>Информационная справка.</li>
           </ul>
           <div>
-            <Button type="link" href="./files.zip" size="large">Скачать материалы</Button>
+            <Button type="link" href="./files/cskn1-files.zip" size="large">Скачать материалы</Button>
           </div>
         </div>
       </div>
