@@ -76,6 +76,7 @@
     margin-bottom: 1.5rem;
     font-weight: 500;
     font-size: 1.25rem;
+    color: var(--cl-secondary);
   }
   &__skill{
     margin-bottom: 2rem;
@@ -111,6 +112,7 @@
   }
   &__name{
     margin-bottom: 0.5rem;
+    color: var(--cl-secondary);
   }
   &__position {
     color: var(--cl-additional);
@@ -120,6 +122,7 @@
 
 .skills{
   &__list{
+    color: var(--cl-secondary);
     li + li {
       margin-top: 0.5rem;
     }
@@ -131,6 +134,7 @@
     margin: 0;
     padding: 0;
     list-style-position: inside;
+    color: var(--cl-secondary);
     li + li {
       margin-top: 0.5rem;
     }
@@ -138,10 +142,14 @@
 }
 
 .track{
+  .worker__title{
+    color: var(--cl-stage);
+  }
   &__list{
     margin: 0;
     padding: 0;
     list-style: none;
+    color: var(--cl-secondary);
     li{
       position: relative;
       padding-left: 1.625rem;

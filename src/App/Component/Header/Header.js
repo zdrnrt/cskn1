@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Header.scss"
 import { Button, Typography } from 'antd';
 
 export default function Header() {
+  useEffect(function () {
+    console.log('useeffect')
+    const header = document.querySelector('.header');
+    const headerHeight = header.getBoundingClientRect().height;
+    function headerFixing(e) {
+      console.log('scroll', e, window.scrollY);
+      if (window.scrollY > headerHeight){
+        document.body.style.paddingTop = `${headerHeight}px`;
+        header.classList.add('header--fixed');
+      } else {
+        document.body.style.paddingTop = 0;
+        header.classList.remove('header--fixed');
+      }
+    }
+
+    document.addEventListener('scroll', headerFixing);
+    return () => document.removeEventListener('scroll', headerFixing);
+  }, [])
   return (
     <header className="header">
       <div className="container header__content">

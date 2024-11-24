@@ -13,7 +13,6 @@
     .tile__description{
       margin: 0;
       text-align: center;
-      color: var(--cl-tile-grey);
     }
   }
   &--steps{
@@ -83,6 +82,7 @@
   }
   &__description{
     margin: 0;
+    color: var(--cl-secondary);
   }
   &__list{
     margin: 0;
@@ -91,5 +91,8 @@
     color: var(--cl-secondary);
     font-size: 1rem;
     line-height: 150%;
+  }
+  &__result{
+    color: var(--cl-lightblue);
   }
 }

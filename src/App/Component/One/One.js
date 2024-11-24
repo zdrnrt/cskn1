@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Typography } from "antd";
 const { Title, Paragraph } = Typography;
 import Tile from "../../Shared/Tile";
-import macPic from "../../../img/mac.jpg";
+import macPic from "../../../img/mac.png";
 import "./One.scss";
 
 const plusesList = [

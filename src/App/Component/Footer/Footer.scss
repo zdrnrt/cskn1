@@ -50,10 +50,12 @@
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     font-weight: 500;
+    color: var(--cl-secondary);
   }
   &__list{
     margin-bottom: 2rem;
     line-height: 1.5;
+    color: var(--cl-secondary);
   }
   .footer-contacts__link{
     color: inherit
@@ -68,9 +70,11 @@
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
+    color: var(--cl-secondary);
   }
   &__list{
     margin-bottom: 1.5rem;
     line-height: 1.5;
+    color: var(--cl-secondary);
   }
 }

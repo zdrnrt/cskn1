@@ -35,6 +35,7 @@ export default function App() {
             itemMarginBottom: 8,
             // labelFontSize: 16,
             fontSize: 16,
+            labelColor: '#434343'
           },
           TextArea: {
             itemMarginBottom: 24,

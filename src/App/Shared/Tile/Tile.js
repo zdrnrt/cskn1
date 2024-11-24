@@ -13,8 +13,9 @@ function Icon({name}) {
 
 export default function Tile(props) {
   const type = props?.type || "default";
-  const { title, description, steps, icon } = props.data;
+  const { title, description, steps, result, icon } = props.data;
   const stepsList = steps && steps.map( (el, i) => <li key={i}>{el}</li>)
+  result && stepsList.push(<li><span className="tile__result">Итого:</span> {result}</li>)
   return (
     <div className={`tile tile--${type}`}>
       <div className={icon ? 'tile__title tile__title--icon' : 'tile__title'}>
