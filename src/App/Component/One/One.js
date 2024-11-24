@@ -31,9 +31,7 @@ export default function One(){
         <Paragraph className="one__description">Создаём новую индустрию на рынке в 14.5 трлн рублей с ежегодным ростом 15%</Paragraph>
         <div className="one__video video">
           <div className="video__content">
-            <img></img>
-            <iframe className="video__iframe" src="https://www.youtube.com/embed/eqlNOi6KDig?si=mFMwDc6-TkFoctkr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            {/* <iframe className="video__iframe"></iframe> */}
+            <iframe className="video__iframe" src="https://www.youtube.com/embed/eqlNOi6KDig?si=mFMwDc6-TkFoctkr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </div>
           <img src={macPic} alt="mac" className="video__mac"></img>
         </div>
