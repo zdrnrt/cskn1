@@ -38,10 +38,9 @@ export default function Footer() {
             <li>Питчдек.</li>
             <li>Финдек.</li>
             <li>Инвестиционный тизер.</li>
-            <li>Информационная справка.</li>
           </ul>
           <div>
-            <Button type="link" href="./files/cskn1-files.zip" size="large">Скачать материалы</Button>
+            <Button type="link" href="./files/cskn1-file.zip" size="large">Скачать материалы</Button>
           </div>
         </div>
       </div>
