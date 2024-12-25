@@ -8,6 +8,7 @@ import t1 from "../../../img/team/t1.jpg"
 import t2 from "../../../img/team/t2.jpg"
 import t3 from "../../../img/team/t3.jpg"
 import t4 from "../../../img/team/t4.jpg"
+import tn from "../../../img/team/tn.jpg"
 
 const founder = {
   name: 'Аркадий Шевченко',
@@ -33,6 +34,16 @@ const founder = {
   ]
 }
 const team = [
+  {
+    name: 'Никита Волосков',
+    position: 'Head of Design',
+    photo: tn,
+    skills: [
+      'Product Design',
+      '5+ лет в дизайне и аналитике',
+      'Опыт в проектах Яндекса и Т-Банка',
+    ],
+  },
   {
     name: 'Полина Миллер',
     position: 'CFO и Главный бухгалтер',
