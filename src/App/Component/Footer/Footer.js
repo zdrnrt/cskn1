@@ -35,11 +35,11 @@ export default function Footer() {
         <div className="footer__materials footer-materials">
           <Title level={4} className="footer-materials__title">Скачайте дополнительные материалы</Title>
           <ul className="footer-materials__list">
-<li>Краткий тизер проекта (замена)</li>
-<li>Полный инвестиционный тизер проекта (замена)</li>
-<li>Инвестиционная презентация (замена)</li>
-<li>Питчдек (замена)</li>
-<li>Финдек (остается прежний документ)</li>
+            <li>Краткий тизер проекта</li>
+            <li>Полный инвестиционный тизер проекта</li>
+            <li>Инвестиционная презентация</li>
+            <li>Питчдек</li>
+            <li>Финдек</li>
           </ul>
           <div>
             <Button type="link" href="./files/cskn1-file.zip" size="large">Скачать материалы</Button>
