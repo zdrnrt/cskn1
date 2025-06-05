@@ -20,6 +20,8 @@ import toolbox from "../../img/icons/toolbox.svg";
 import up from "../../img/icons/up.svg";
 import user from "../../img/icons/user.svg";
 import vector from "../../img/icons/vector.svg";
+import linkArrow from '../../img/icons/link-arrow.svg';
+import linkDownload from '../../img/icons/link-download.svg';
 
 export default {
   arrow,
@@ -44,4 +46,6 @@ export default {
   up,
   user,
   vector,
+  linkArrow,
+  linkDownload
 };

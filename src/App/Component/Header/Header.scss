@@ -26,15 +26,25 @@
     @media (max-width: 767px) {
       width: min-content;
     }
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+    }
+    @media (min-width: 1024px) {
+    }
   }
 
   &__logo {
     font-size: 1.5rem;
     letter-spacing: -0.02em;
     font-weight: 600;
-
     &:visited {
       color: var(--cl-primary);
+    }
+    &-pic{
+      width: 130px;
     }
   }
 }

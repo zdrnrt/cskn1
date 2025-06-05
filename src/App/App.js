@@ -24,6 +24,8 @@ export default function App() {
       theme={{
         token: {
           fontFamily: '"Inter", serif',
+          colorPrimary: '#1570EF',
+          colorLink: '#535862'
         },
         components: {
           Typography: {
@@ -42,7 +44,7 @@ export default function App() {
           },
           Button: {
             paddingBlockLG: 8,
-            paddingInlineLG: 16
+            paddingInlineLG: 16,
           }
         },
       }}
