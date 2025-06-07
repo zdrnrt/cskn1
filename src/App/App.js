@@ -24,13 +24,25 @@ export default function App() {
       theme={{
         token: {
           fontFamily: '"Inter", serif',
+          fontSizeHeading1: 36,
+          fontSizeHeading2: 36,
+          fontSizeHeading3: 30,
           colorPrimary: '#1570EF',
-          colorLink: '#535862'
+          colorLink: '#535862',
+          colorTextHeading: '#181d27',
+          colorLink: '#535862',
+          colorLinkHover: '#a4a7ae',
+          colorSuccess: '#099250',
+          // colorTextSecondary: '#535862'
+          colorTextSecondary: 'red',
+          colorTextDescription: 'blue',
+          lineHeight: 1.2
         },
         components: {
           Typography: {
             titleMarginTop: 0,
-            titleMarginBottom: 24
+            titleMarginBottom: 24,
+
           },
           Form: {
             verticalLabelPadding: 6,
@@ -43,7 +55,7 @@ export default function App() {
             itemMarginBottom: 24,
           },
           Button: {
-            paddingBlockLG: 8,
+            paddingBlockLG: 12,
             paddingInlineLG: 16,
           }
         },

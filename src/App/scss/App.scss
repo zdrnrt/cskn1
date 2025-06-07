@@ -26,6 +26,7 @@ body{
   font-size: 16px;
   color: var(--cl-primary);
   line-height: 120%;
+  text-wrap: balance;
 }
 body *{
   box-sizing: border-box;
@@ -66,8 +67,8 @@ button {
   margin-right: auto;
   max-width: 1280px;
   @media (min-width: 1320px){
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   @media (min-width: 1440px){
     

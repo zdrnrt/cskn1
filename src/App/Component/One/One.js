@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Typography } from "antd";
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 import Tile from "../../Shared/Tile";
 import macPic from "../../../img/mac.png";
 import "./One.scss";
@@ -21,7 +21,7 @@ export default function One(){
   return (
     <section className="one section">
       <div className="container">
-        <Title level={1} className="one__title">Pricing AI-powered «Финансовый Терапевт» — первая в мире система диагностики и лечения проблем с кредитами и долгами</Title>
+        <Title level={1} className="one__title">AI-powered «Финансовый Терапевт» — первая в мире система диагностики и лечения проблем с кредитами и долгами</Title>
         <div className="one__content">
 
         <div className="one__video">
@@ -33,7 +33,7 @@ export default function One(){
           </div>
         </div>
         <div className="one__description">
-          <Paragraph className="one__text">Создаём индустрию антикризисного консалтинга для физлиц на рынке объемом 14.5 трлн рублей</Paragraph>
+          <Paragraph type='secondary' className="one__text"><Text>Создаём индустрию антикризисного консалтинга для физлиц на рынке объемом 14.5 трлн рублей</Text></Paragraph>
           <div className="one__pluses">{pluses}</div>
           </div>
         </div>

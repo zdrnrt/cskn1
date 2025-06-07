@@ -29,7 +29,7 @@ export default function Header() {
           <img src={logo} className="header__logo-pic"  />
         </Button>
         <div className="header__controls">
-          <Button type="link" size="large" href="https://cskn1.ru/" icon={<img src={Icons.linkArrow} />} iconPosition="end">Страница продукта</Button>
+          <Button type="link" size="large" href="https://cskn1.ru/" icon={<img src={Icons.linkArrow} />} iconPosition="end">Перейти на страницу продукта</Button>
           <Button type="link" size="large" href="./files/cskn1-invest-presentation.pdf" icon={<img src={Icons.linkDownload} />} iconPosition="end">Скачать презентацию</Button>
           <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
         </div>
