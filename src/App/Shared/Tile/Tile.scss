@@ -1,16 +1,14 @@
 .tile{
   &--default{
     flex-basis: 100%;
-    @media (min-width: 768px) {
-      flex: 1 0 calc(100% / 3);
-    }
     .tile__title{
       margin-bottom: calc(12rem / 16);
       color: var(--cl-tile-green);
       font-size: 1.875rem;
       text-align: center;
+      color: var(--cl-red);
       @media (min-width: 1024px) {
-        font-size: calc(60rem / 16);
+        font-size: 3.75rem;
       }
     }
     .tile__description{
@@ -78,7 +76,7 @@
   &__title{
     margin: 0;
     line-height: 1.2;
-    font-weight: 500;
+    font-weight: 600;
     &--icon{
       display: flex;
       flex-flow: row nowrap;
@@ -88,6 +86,7 @@
     }
   }
   &__description{
+    font-size: 1.125rem;
     margin: 0;
     color: var(--cl-secondary);
   }

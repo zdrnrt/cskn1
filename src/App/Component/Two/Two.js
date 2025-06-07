@@ -1,13 +1,14 @@
 import React from "react";
-import { Typography } from "antd";
+import { List, Typography } from "antd";
 const { Title, Paragraph } = Typography;
 import Tile from "../../Shared/Tile"
 import "./Two.scss";
+import Icon from '../../Icon'
 
 const problem = [
     {
-      title: '30.2 трлн ₽',
-      description: 'общий долг населения РФ'
+      title: '34 трлн',
+      description: '₽ общий долг населения РФ'
     },
 
     {
@@ -23,8 +24,8 @@ const problem = [
       description: 'человек регулярно берут микрозаймы '
     },
   {
-    title: '3.2 трлн ₽',
-    description: 'уже на взыскании у банков'
+    title: '3.5 трлн',
+    description: '₽ уже на взыскании у банков'
   }
 ];
 
@@ -34,14 +35,19 @@ export default function Two(){
     <section className="two section">
       <div className="container">
         <div className="two__content">
-
-        <Title className="subtitle two__title" level={2}>Национальная проблема, которую больше нельзя игнорировать</Title>
-        <div className="two__problems">
-          {problemList}
-        </div>
-        <Paragraph className="two__description">
-          Долги растут, а существующие решения только усугубляют проблему: банки выдают новые кредиты, МФО — займы под 300% годовых, а юристы продают банкротство. 
-        </Paragraph>
+          <img src={Icon.attention} className="two__title-icon" />
+          <Title className="subtitle two__title" level={2}>Проблема B2C: <br/>Запредельно высокая долговая нагрузка</Title>
+          <div className="two__problems">
+            {problemList}
+          </div>
+          <Paragraph className="two__description">
+            Долги растут как снежный ком, а существующие игроки только усугубляют проблему:
+          </Paragraph>
+          <ol className="two__list">
+            <li className="two__list-item">Банки агрессивно продают кредиты</li>
+            <li className="two__list-item">МФО — займы под 300% годовых</li>
+            <li className="two__list-item">Юристы — сразу банкротство</li>
+          </ol>
         </div>
       </div>
 

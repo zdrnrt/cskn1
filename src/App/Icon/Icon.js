@@ -22,6 +22,7 @@ import user from "../../img/icons/user.svg";
 import vector from "../../img/icons/vector.svg";
 import linkArrow from '../../img/icons/link-arrow.svg';
 import linkDownload from '../../img/icons/link-download.svg';
+import attention from '../../img/icons/attention.svg'
 
 export default {
   arrow,
@@ -47,5 +48,6 @@ export default {
   user,
   vector,
   linkArrow,
-  linkDownload
+  linkDownload,
+  attention
 };

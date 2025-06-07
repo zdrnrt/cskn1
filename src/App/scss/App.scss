@@ -3,6 +3,7 @@
   --cl-secondary: #535862;
   --cl-additional: #8C8C8C;
   --cl-blue: #1677ff;
+  --cl-red: #e04f16;
   --cl-lightblue: #40a9ff;
   --cl-tile-blue: #69c0ff;
   --cl-tile-green: #099250;
@@ -41,9 +42,7 @@ ul, ol{
 }
 h2.subtitle {
   letter-spacing: -0.02em;
-  font-weight: 500;
   text-align: center;
-  line-height: 1.2;
   color: var(--cl-primary);
 }
 h3.part-title {
