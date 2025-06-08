@@ -73,6 +73,24 @@
       margin-top: 0;
     }
   }
+  &--results{
+    .tile__title{
+      margin-bottom: 0.75rem;
+      color: var(--cl-tile-green);
+      font-size: 1.875rem;
+      text-align: center;
+      color: var(--cl-tile-green);
+      @media (min-width: 1024px) {
+        font-size: 3.75rem;
+      }
+    }
+    .tile__description{
+      margin: 0;
+      text-align: center;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+  }
   &__title{
     margin: 0;
     line-height: 1.2;

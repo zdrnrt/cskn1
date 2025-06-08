@@ -32,18 +32,14 @@ const results = [
 ];
 
 export default function Four() {
-  const resultsList = results.map( (el, i) => <Tile key={i} data={el} /> )
   return (
     <section className="four section">
       <div className="container">
         <div className="four-content">
-          <Title level={2} className="subtitle four__title">Результаты тестирования: гипотезы подтверждены</Title>
+          <Title level={2} className="subtitle four__title">Все гипотезы подтверждены. <br/>Результаты тестирования</Title>
           <div className="four__results">
-            {resultsList}
-        </div>
-        <div className="four__controls">
-          <Button type="primary" size="large" href="./files/cskn1-short-teaser.pdf">Скачать краткий тизер</Button>
-        </div>
+            {results.map( (el, i) => <Tile type='results' key={i} data={el} /> )}
+          </div>
         </div>
       </div>
     </section>
