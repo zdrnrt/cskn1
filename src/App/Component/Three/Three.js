@@ -5,6 +5,53 @@ import "./Three.scss";
 import Tile from "../../Shared/Tile"
 import Icons from "../../Icon";
 
+const b2c = [
+  {
+    title: 'Непредвзятая диагностика',
+    steps: [
+      'AI-анализ финансового состояния',
+      'Оценка кредитной нагрузки',
+      'Выявление первопричин проблем',
+    ]
+  },
+  {
+    title: 'Персональный план',
+    steps: [
+      'Разработка стратегии',
+      'Пошаговый алгоритм действий',
+      'Расчет сроков и результатов',
+    ]
+  },
+  {
+    title: 'Подбор специалистов',
+    steps: [
+      'Проверенные партнеры',
+      'Оптимальные решения',
+      'Контроль качества услуг',
+    ]
+  },
+  {
+    title: 'Сопровождение',
+    steps: [
+      'Мониторинг реализации',
+      'Корректировка плана',
+      'Экспертная поддержка 24/7',
+    ]
+  }
+]
+
+const b2b = [
+  {
+    title: 'Глубокая квалификация'
+  },
+  {
+    title: 'Консультирование и нативный прогрев'
+  },
+  {
+    title: 'Продажа услуг и экспертности партнера'
+  },
+]
+
 const steps = [
   {
     title: "1. Автоматическая диагностика",
@@ -42,39 +89,27 @@ const steps = [
 
 const stack = [
   {
-    icon: "brain",
+    icon: "atom",
     title: "AI/ML ядро",
-    steps: [
-      "GPT-агенты для коммуникации",
-      "Нейросети для анализа данных",
-      "Предиктивная аналитика",
-    ],
+    steps: [ "GPT-агенты для коммуникации", "Нейросети для анализа данных", "Предиктивная аналитика", ],
   },
   {
-    icon: "gear",
+    icon: "settings",
     title: "Автоматизация",
-    steps: [
-      "24/7 доступность",
-      "Масштабируемость",
-      "Минимум человеческого фактора",
-    ],
+    steps: [ "24/7 доступность", "Масштабируемость", "Минимум человеческого фактора", ],
   },
   {
-    icon: "shield",
+    icon: "shield2",
     title: "Безопасность",
-    steps: [
-      "Шифрование данных",
-      "Защита персональной информации",
-      "Compliance со всеми требованиями",
-    ],
+    steps: [ "Шифрование данных", "Защита персональной информации", "Compliance со всеми требованиями", ],
   },
   {
-    icon: "dots",
+    icon: "dotsGrid",
     title: "Интеграции",
     steps: ["CRM-системы", "Платёжные сервисы", "Партнёрский API"],
   },
   {
-    icon: "chart",
+    icon: "bar",
     title: "Аналитика",
     steps: [
       "Мониторинг метрик",
@@ -83,7 +118,7 @@ const stack = [
     ],
   },
   {
-    icon: "step",
+    icon: "layers",
     title: "Масштабируемость",
     steps: [
       "Cloud-native архитектура",
@@ -95,22 +130,22 @@ const stack = [
 
 const unique = [
   {
-    icon: "scale",
+    icon: "scales",
     title: "Непредвзятость",
     description:
-      "Искусственный интеллект анализирует ситуацию  объективно, без эмоций и личной выгоды.",
+      "Искусственный интеллект анализирует ситуацию  объективно, без эмоций и личной выгоды",
   },
   {
-    icon: "puzzle",
-    title: "Системность",
+    icon: "person",
+    title: "Персонализация",
     description:
-      "Комплексный подход к решению проблем с учётом  всех факторов и долгосрочных последствий.",
+      "Системный подход к оптимизации с учётом индивидуальных факторов и долгосрочных последствий",
   },
   {
-    icon: "segment",
+    icon: "expand",
     title: "Масштабируемость",
     description:
-      "Неограниченные возможности роста без пропорционального увеличения расходов на персонал.",
+      "Неограниченные возможности роста без пропорционального увеличения расходов на персонал",
   },
 ];
 
@@ -138,22 +173,61 @@ export default function Three() {
       <div className="container">
         <div className="three__content">
           <Title level={2} className="subtitle three__title">
-            AI Финансовый Терапевт: революционный подход к решению
+            AI Финансовый Терапевт: <br/>революционный подход к оптимизации долговой нагрузки граждан&nbsp;и лидогенерации для B2B партнеров
           </Title>
-          <Title level={3} className="part-title three__part-title">Этапы работы</Title>
-          <div className="three__steps">
-            {stepsList}
+          <Title level={3} className="part-title three__part-title">Как это работает?</Title>
+          <Title level={4} className="three__subtitle">Состав продукта для B2C:</Title>
+          <div className="three__list">
+            {b2c.map( (el, i) => (
+              <div key={i} className="three-tile three-tile--b2c">
+                <div className="three-tile__number">{i + 1}</div>
+                <div className="three-tile__title">{el.title}</div>
+                <ul className="three-tile__list">
+                  {el.steps.map((elem) => (
+                    <li className="three-tile__list-item">{elem}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-          <Title level={3} className="part-title three__part-title">Технологический стек</Title>
-          <div className="three__stack">
-            {stackList}
+          <Title level={4} className="three__subtitle">Состав продукта для B2B <br/>(для B2B клиентов проект является агрегатором лидов):</Title>
+          <p className="three__text">Поставка высоко конверсионных лидов (на 26% выше среднего)</p>
+          <div className="three__list three__list">
+            {b2b.map( (el, i) => (
+              <div key={i} className="three-tile three-tile--b2b">
+                <div className="three-tile__number">{i + 1}</div>
+                <div className="three-tile__title">{el.title}</div>
+              </div>
+            ))}
           </div>
           <Title level={3} className="part-title three__part-title">Уникальные преимущества</Title>
-          <div className="three__stack">
-            {uniqueList}
+          <div className="three__list">
+            {unique.map( (el, i) => (
+              <div key={i} className="three-unique">
+                <div className="three-unique__icon">
+                  <img src={Icons[el.icon]} className="three-unique__pic"/>
+                </div>
+                <div className="three-unique__title">{el.title}</div>
+                <p className="three-unique__text">{el.description}</p>
+              </div>
+            ))}
           </div>
           <div className="three__controls">
-            <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Задать вопрос</Button>
+            <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
+          </div>
+          <Title level={3} className="part-title three__part-title">Технологический стек</Title>
+          <div className="three__list three__list--stack">
+            {stack.map( (el, i) => (
+              <div key={i} className="three-stack">
+                <div className="three-stack__icon">
+                  <img src={Icons[el.icon]} className="three-stack__pic"/>
+                </div>
+                <div className="three-stack__title">{el.title}</div>
+                <ul className="three-stack__list">
+                  {el.steps.map((elem, i) => <li key={i} className="three-stack__item">{elem}</li>)}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>

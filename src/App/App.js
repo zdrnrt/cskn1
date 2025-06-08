@@ -24,6 +24,7 @@ export default function App() {
       theme={{
         token: {
           fontFamily: '"Inter", serif',
+          fontSize: 16,
           fontSizeHeading1: 36,
           fontSizeHeading2: 36,
           fontSizeHeading3: 30,
@@ -61,20 +62,20 @@ export default function App() {
         },
       }}
     >
-      <Header />
+      {/* <Header /> */}
       <main className="app">
-        <One />
-        <Two />
+        {/* <One /> */}
+        {/* <Two /> */}
         <Three />
-        <Four />
-        <Five />
-        <Six />
-        <Seven />
-        <Eight />
-        <Nine /> 
-        <Ten />
+        {/* <Four /> */}
+        {/* <Five /> */}
+        {/* <Six /> */}
+        {/* <Seven /> */}
+        {/* <Eight /> */}
+        {/* <Nine />  */}
+        {/* <Ten /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </ConfigProvider>
   );
 }

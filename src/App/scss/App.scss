@@ -1,5 +1,6 @@
 :root{
-  --cl-primary: #262626;
+  // --cl-primary: #262626;
+  --cl-primary: #181d27;
   --cl-secondary: #535862;
   --cl-additional: #8C8C8C;
   --cl-blue: #1677ff;
@@ -26,7 +27,7 @@ body{
   font-family: "Inter", sans-serif;
   font-size: 16px;
   color: var(--cl-primary);
-  line-height: 120%;
+  line-height: 1.2;
   text-wrap: balance;
 }
 body *{
@@ -48,7 +49,10 @@ h2.subtitle {
 h3.part-title {
   font-weight: 500;
   text-align: center;
-  color: var(--cl-secondary);
+  // color: var(--cl-secondary);
+}
+h4{
+  text-align: center;
 }
 img{
   width: 100%;
@@ -58,6 +62,9 @@ a {
 }
 button {
   cursor: pointer;
+}
+p{
+  margin: 0;
 }
 .container{
   padding-left: 20px;

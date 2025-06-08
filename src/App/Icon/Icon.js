@@ -22,7 +22,17 @@ import user from "../../img/icons/user.svg";
 import vector from "../../img/icons/vector.svg";
 import linkArrow from '../../img/icons/link-arrow.svg';
 import linkDownload from '../../img/icons/link-download.svg';
-import attention from '../../img/icons/attention.svg'
+import attention from '../../img/icons/attention.svg';
+import scales from '../../img/icons/scales.svg';
+import person from '../../img/icons/person.svg';
+import expand from '../../img/icons/expand.svg';
+import atom from '../../img/icons/atom.svg';
+import bar from '../../img/icons/bar.svg';
+import dotsGrid from '../../img/icons/dots-grid.svg';
+import layers from '../../img/icons/layers.svg';
+import settings from '../../img/icons/settings.svg';
+import shield2 from '../../img/icons/shield2.svg';
+
 
 export default {
   arrow,
@@ -49,5 +59,14 @@ export default {
   vector,
   linkArrow,
   linkDownload,
-  attention
+  attention,
+  scales,
+  person,
+  expand,
+  atom,
+  bar,
+  dotsGrid,
+  layers,
+  settings,
+  shield2,
 };
