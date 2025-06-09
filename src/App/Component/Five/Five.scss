@@ -109,6 +109,9 @@
     @media (min-width: 1200px) {
       margin-bottom: 7rem;
     }
+    &--last{
+      margin-bottom: 0;
+    }
   }
   &__step{
     flex: 1 0 0%;
