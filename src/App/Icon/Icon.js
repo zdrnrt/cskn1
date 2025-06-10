@@ -32,6 +32,8 @@ import dotsGrid from '../../img/icons/dots-grid.svg';
 import layers from '../../img/icons/layers.svg';
 import settings from '../../img/icons/settings.svg';
 import shield2 from '../../img/icons/shield2.svg';
+import growth from '../../img/icons/growth.svg';
+import chartGreen from '../../img/icons/chart-green.svg';
 
 
 export default {
@@ -69,4 +71,6 @@ export default {
   layers,
   settings,
   shield2,
+  growth,
+  chartGreen,
 };

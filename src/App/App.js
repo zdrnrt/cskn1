@@ -63,16 +63,16 @@ export default function App() {
         },
       }}
     >
-      {/* <Header /> */}
+      <Header />
       <main className="app">
-        {/* <One /> */}
-        {/* <Two /> */}
-        {/* <Three /> */}
-        {/* <Four /> */}
-        {/* <Five /> */}
-        {/* <Six /> */}
+        <One />
+        <Two />
+        <Three />
+        <Four />
+        <Five />
+        <Six />
         <Marketing />
-        {/* <Seven /> */}
+        <Seven />
         {/* <Eight /> */}
         {/* <Nine />  */}
         {/* <Ten /> */}

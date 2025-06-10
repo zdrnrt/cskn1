@@ -3,7 +3,7 @@
     flex-basis: 100%;
     .tile__title{
       margin-bottom: calc(12rem / 16);
-      color: var(--cl-tile-green);
+      color: var(--cl-green);
       font-size: 1.875rem;
       text-align: center;
       color: var(--cl-red);
@@ -76,10 +76,10 @@
   &--results{
     .tile__title{
       margin-bottom: 0.75rem;
-      color: var(--cl-tile-green);
+      color: var(--cl-green);
       font-size: 1.875rem;
       text-align: center;
-      color: var(--cl-tile-green);
+      color: var(--cl-green);
       @media (min-width: 1024px) {
         font-size: 3.75rem;
       }
