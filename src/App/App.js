@@ -14,6 +14,7 @@ import {
   Nine,
   Ten,
   Footer,
+  Marketing,
 } from "./Component";
 import normalize from "normalize.css";
 import "./scss/App.scss";
@@ -69,7 +70,8 @@ export default function App() {
         {/* <Three /> */}
         {/* <Four /> */}
         {/* <Five /> */}
-        <Six />
+        {/* <Six /> */}
+        <Marketing />
         {/* <Seven /> */}
         {/* <Eight /> */}
         {/* <Nine />  */}
