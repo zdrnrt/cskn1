@@ -1,46 +1,59 @@
-.one{
+.one {
   background-color: var(--cl-bg-section);
-  &__content{
+
+  &__content {
     margin-bottom: 2rem;
+
     @media screen and (min-width: 1024px) {
       margin-bottom: 3rem;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      gap: 50px;
+      // gap: 50px;
     }
   }
-  & .one__title{
+
+  & .one__title {
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
     font-weight: 700;
     text-align: center;
     line-height: 1.2;
-    @media (min-width: 1200px){
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 1200px) {
       margin-bottom: 3rem;
       font-size: calc(36rem / 16);
     }
   }
-  &__video{
+
+  &__video {
     margin-bottom: 2rem;
+
     @media screen and (min-width: 1024px) {
       margin-bottom: 0;
       flex: 0 0 640px;
     }
   }
-  &__description{
-    @media screen and (min-width: 1024px) {
+
+  &__description {
+    @media screen and (min-width: 1200px) {
       flex: 0 0 530px;
     }
   }
-  & .one__text{
+
+  & .one__text {
     margin-bottom: 2rem;
     // color: var(--cl-secondary);
     font-size: 1.5rem;
     text-align: center;
   }
-  &__pluses{
+
+  &__pluses {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
@@ -48,19 +61,26 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
+
     @media (min-width: 768px) {
       gap: 2rem;
     }
+
     @media (min-width: 1200px) {
       flex-wrap: nowrap;
     }
-    .tile{
+
+    .tile {
+      @media (min-width: 1024px) {
+        flex-basis: 100%;
+      }
       @media (min-width: 1200px) {
-flex: 1 0 0%
-    }
+        flex: 1 0 0%
+      }
     }
   }
-  &__controls{
+
+  &__controls {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -68,14 +88,17 @@ flex: 1 0 0%
     gap: 0.5rem;
   }
 }
-.video{
+
+.video {
   position: relative;
   max-width: 770px;
   margin: 0 auto;
-  &__mac{
+
+  &__mac {
     width: 100%;
   }
-  &__content{
+
+  &__content {
     position: absolute;
     top: 7%;
     left: 50%;
@@ -85,7 +108,8 @@ flex: 1 0 0%
     aspect-ratio: 16/9;
     // background-color: red;
   }
-  &__iframe{
+
+  &__iframe {
     width: 100%;
     height: 100%;
     border: none;
