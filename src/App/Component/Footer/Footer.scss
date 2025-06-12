@@ -1,17 +1,20 @@
-.footer{
+.footer {
   background-color: var(--cl-bg-section);
-  .footer__content{
+
+  .footer__content {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: center;
-    row-gap: 3rem;
+    gap: 3rem;
+
     @media (min-width: 1200px) {
       flex-flow: row nowrap;
       justify-content: space-between;
       gap: 1.5rem;
     }
   }
+
   // &__info{
   //   display: flex;
   //   flex-flow: row wrap;
@@ -24,38 +27,45 @@
   //   }
   // }
   // &__preview,
-  &__contacts{
+  &__contacts {
     @media (min-width: 768px) {
       // flex-basis: calc(50% - 1rem);
     }
+
     @media (min-width: 1200px) {
       // flex-basis: calc(50% - 1rem);
       flex: 0 0 auto;
     }
 
   }
-  &__materials{
+
+  &__materials {
+
     // flex-basis: 100%;
     @media (min-width: 768px) {
       // flex-basis: calc(50% - 1rem);
     }
+
     @media (min-width: 1200px) {
       // flex-basis: calc(50% - 1rem);
       flex: 1 0 0%;
     }
   }
-  &__preview{
-    @media (min-width: 1200px) {
+
+  &__preview {
+    @media (min-width: 1024px) {
       flex-shrink: 0;
       flex-basis: 350px;
     }
-
   }
-  &__materials{
+
+  &__materials {
+
     // flex-basis: 100%;
     @media (min-width: 768px) {
       // flex-basis: calc(50% - 1rem);
     }
+
     @media (min-width: 1200px) {
       margin-left: 8px;
       // flex-basis: 20.25rem;
@@ -63,41 +73,46 @@
   }
 }
 
-.footer-contacts{
-  .footer-contacts__title{
+.footer-contacts {
+  .footer-contacts__title {
     // margin-bottom: 1.25rem;
     font-size: 1.25rem;
     font-weight: 500;
     color: var(--cl-secondary);
   }
-  &__list{
+
+  &__list {
     margin-bottom: 1.5rem;
     line-height: 1.5;
     color: var(--cl-secondary);
   }
-  .footer-contacts__link{
+
+  .footer-contacts__link {
     color: inherit
   }
-  &__qr{
+
+  &__qr {
     width: 164px;
     aspect-ratio: 1;
     line-height: 0;
   }
 }
 
-.footer-materials{
-  .footer-materials__title{
+.footer-materials {
+  .footer-materials__title {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--cl-secondary);
     text-align: start;
   }
-  &__list{
+
+  &__list {
     margin-bottom: 1.5rem;
     line-height: 1.5;
     color: var(--cl-secondary);
-    a{
+
+    a {
       padding: 0;
       height: auto;
     }
