@@ -106,11 +106,15 @@
   &__funnel {
     margin-bottom: 3.5rem;
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 1rem;
+    @media (min-width: 768px) {
+      align-items: center;
+      flex-flow: row wrap;
 
+    }
     @media (min-width: 1200px) {
       gap: 1.25rem;
     }
@@ -127,11 +131,12 @@
 
     @media (min-width: 768px) {
       margin-bottom: 5rem;
-      column-gap: 2rem;
+      column-gap: 1rem;
       row-gap: 3rem;
     }
-
+    
     @media (min-width: 1200px) {
+      column-gap: 2rem;
       margin-bottom: 7rem;
     }
 
@@ -163,6 +168,7 @@
 
   &__icon {
     width: 23px;
+    flex-shrink: 0;
   }
 }
 
@@ -176,13 +182,14 @@
   }
 
   &__item {
-    padding-left: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
     gap: 12px;
-
+    @media (min-width: 768px) {
+      padding-left: 1rem;
+    }
     &+& {
       margin-top: 20px;
     }
@@ -190,6 +197,7 @@
 
   &__icon {
     width: 28px;
+    flex-shrink: 0;
   }
 
   &__text {
