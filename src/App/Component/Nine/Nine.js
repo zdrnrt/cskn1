@@ -132,7 +132,8 @@ export default function Nine() {
 					<div className="nine__controls">
 						<Button
 							size="large"
-							href="./files/cskn1-invest-presentation.pdf"
+							href="https://docs.google.com/spreadsheets/d/1NEAe3V-I57E4UTDDM5yDIrP9ECTtxyktfqydFMAaFrY/edit?usp=sharing"
+							target='_blank'
 						>
 							Посмотреть финмодель
 						</Button>

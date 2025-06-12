@@ -52,6 +52,12 @@
       gap: 2rem;
     }
     @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    .tile{
+      @media (min-width: 1200px) {
+flex: 1 0 0%
+    }
     }
   }
   &__controls{

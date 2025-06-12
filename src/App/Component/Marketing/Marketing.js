@@ -781,14 +781,15 @@ export default function Marketing() {
 					<div className="marketing__video">
 						<div className="video">
 							<div className="video__content">
-								<iframe
+								<iframe className="video__iframe" src="https://rutube.ru/play/embed/3aeee59afd4cbbcf1376ecdfab9f4fcb/" frameBorder="0" allow="clipboard-write; autoplay" webkitallowfullscreen="true" mozallowfullscreen="true" allowFullScreen></iframe>
+								{/* <iframe
 									className="video__iframe"
 									src="https://www.youtube.com/embed/eqlNOi6KDig?si=mFMwDc6-TkFoctkr"
 									title="YouTube video player"
 									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 									referrerPolicy="strict-origin-when-cross-origin"
 									allowFullScreen
-								></iframe>
+								></iframe> */}
 							</div>
 							<img
 								src={macPic}

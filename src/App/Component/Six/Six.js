@@ -417,7 +417,7 @@ export default function Six() {
 Цель за 6 лет занять <span className='six__subtitle--green'>20%</span> доли рынка
           </h4>
           <div className="six__controls">
-                    <Button size="large" href="./files/cskn1-invest-presentation.pdf">Посмотреть финмодель</Button>
+                    <Button size="large" href="https://docs.google.com/spreadsheets/d/1NEAe3V-I57E4UTDDM5yDIrP9ECTtxyktfqydFMAaFrY/edit?usp=sharing" target='_blank'>Посмотреть финмодель</Button>
                     <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
                   </div>
 				</div>
