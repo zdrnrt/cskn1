@@ -28,7 +28,7 @@
     margin: 0 auto 3rem;
     max-width: 800px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
@@ -59,8 +59,12 @@
 
     @media (min-width: 768px) {
       margin-bottom: 5rem;
+    }
+
+    @media (min-width: 1024px) {
       column-gap: 2rem;
       row-gap: 3rem;
+
     }
 
     @media (min-width: 1200px) {
@@ -209,7 +213,11 @@
 }
 
 .marketing-plan {
-  flex: 1 0 auto;
+  flex: 1 0 100%;
+
+  @media (min-width: 768px) {
+    flex-basis: auto;
+  }
 
   &__icon {
     margin: 0 0 1rem;
@@ -257,12 +265,16 @@
   }
 
   &__item {
-    padding-left: 1rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
+    
+    @media (min-width: 1024px) {
+      align-items: center;
+      padding-left: 1rem;
+    }
 
     &+& {
       margin-top: 20px;
@@ -271,6 +283,7 @@
 
   &__icon {
     width: 28px;
+    flex-shrink: 0;
   }
 
   &__text {
@@ -338,7 +351,7 @@
 .marketing-tool {
   position: relative;
   margin-top: 1.5rem;
-  flex: 1 0 auto;
+  flex: 1 0 100%;
   padding: 1rem;
   background: var(--cl-bg-section);
   text-align: center;

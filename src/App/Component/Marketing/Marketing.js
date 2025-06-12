@@ -1,7 +1,6 @@
 import React from 'react';
 import { Typography, Button } from 'antd';
 const { Title } = Typography;
-import Tile from '../../Shared/Tile';
 import './Marketing.scss';
 import macPic from '../../../img/mac.png';
 
