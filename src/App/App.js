@@ -73,8 +73,8 @@ export default function App() {
         {/* <Six /> */}
         {/* <Marketing /> */}
         {/* <Seven /> */}
-        <Eight />
-        {/* <Nine />  */}
+        {/* <Eight /> */}
+        <Nine /> 
         {/* <Ten /> */}
       </main>
       {/* <Footer /> */}
