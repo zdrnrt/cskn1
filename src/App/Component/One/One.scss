@@ -21,10 +21,6 @@
     text-align: center;
     line-height: 1.2;
 
-    @media (max-width: 767px) {
-      font-size: 28px;
-    }
-
     @media (min-width: 1200px) {
       margin-bottom: 3rem;
       font-size: calc(36rem / 16);
