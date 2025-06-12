@@ -74,10 +74,11 @@ export default function App() {
         {/* <Marketing /> */}
         {/* <Seven /> */}
         {/* <Eight /> */}
-        <Nine /> 
+        {/* <Nine />  */}
+        {/* form */}
         {/* <Ten /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </ConfigProvider>
   );
 }
