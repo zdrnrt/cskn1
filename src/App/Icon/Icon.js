@@ -35,6 +35,8 @@ import shield2 from '../../img/icons/shield2.svg';
 import growth from '../../img/icons/growth.svg';
 import chartGreen from '../../img/icons/chart-green.svg';
 import check2 from '../../img/icons/check2.svg';
+import bars from '../../img/icons/bars.svg';
+import xmark from '../../img/icons/xmark.svg';
 
 
 export default {
@@ -75,4 +77,6 @@ export default {
   growth,
   chartGreen,
   check2,
+  bars,
+  xmark,
 };
