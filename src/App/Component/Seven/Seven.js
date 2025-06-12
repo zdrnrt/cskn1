@@ -2,8 +2,6 @@ import React from 'react';
 import { Typography, Button } from 'antd';
 const { Title } = Typography;
 import './Seven.scss';
-import Tile from '../../Shared/Tile';
-import Icon from '../../Icon';
 
 import t1 from '../../../img/team/t1-2.jpg';
 import t2 from '../../../img/team/t2-2.jpg';
@@ -251,7 +249,7 @@ function Worker({ props }) {
 
 export default function Seven() {
 	const teamList = team.map((el, i) => <Worker key={i} props={el} />);
-  /*
+	/*
   {
 		icon: 'chartGreen',
 		title: 'Рост по годам',
@@ -263,13 +261,15 @@ export default function Seven() {
 	},
   */
 	const planList = plan.map((el, i) => (
-    <div key={i} className='seven-plan'>
-      <img src={Icons[el.icon]} className='seven-plan__icon'/>
-      <div className='seven-plan__title'>{el.title}</div>
-      <ul className='seven-plan__list'>
-        {el.steps.map((step, i) => <li key={i}>{step}</li>)}
-      </ul>
-    </div>
+		<div key={i} className="seven-plan">
+			<img src={Icons[el.icon]} className="seven-plan__icon" />
+			<div className="seven-plan__title">{el.title}</div>
+			<ul className="seven-plan__list">
+				{el.steps.map((step, i) => (
+					<li key={i}>{step}</li>
+				))}
+			</ul>
+		</div>
 	));
 	return (
 		<section className="seven section">
