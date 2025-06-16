@@ -29,6 +29,7 @@ export default function App() {
           fontSizeHeading1: 36,
           fontSizeHeading2: 36,
           fontSizeHeading3: 30,
+          fontWeightStrong: 600,
           colorPrimary: '#1570EF',
           colorLink: '#535862',
           colorTextHeading: '#181d27',
@@ -57,8 +58,9 @@ export default function App() {
             itemMarginBottom: 24,
           },
           Button: {
-            paddingBlockLG: 12,
+            paddingBlockLG: 10,
             paddingInlineLG: 16,
+            contentFontSizeLG: 16
           }
         },
       }}
