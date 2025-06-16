@@ -19,7 +19,7 @@ export default function Five() {
 			<div className="container">
 				<div className="five__content">
 					<Title className="subtitle five__title" level={2}>
-						Двойная монетизация: устойчивая модель роста
+						Двойная монетизация и устойчивая модель роста
 					</Title>
 					<Title level={3} className="part-title five__part-title">
 						Привлечение клиентов в B2C2B воронку (CAC: 1017₽)
@@ -77,7 +77,7 @@ export default function Five() {
 							AI - SEO
 						</div>
 					</div>
-					<Title level={3} className="part-title five__part-title">
+					<Title level={3} className="part-title five__part-title" style={{marginBottom: '4rem'}}>
 						B2C клиенты платят (ср. чек 2.200₽) за:
 					</Title>
 
@@ -270,7 +270,7 @@ export default function Five() {
 						</div>
 						<div className="five-step five__step">
 							<div className="five-step__title">
-								4. Типы B2C клиентов:
+								Типы B2C клиентов:
 							</div>
 							<div className="five-step__item">
 								<svg

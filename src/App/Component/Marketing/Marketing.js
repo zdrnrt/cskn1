@@ -357,6 +357,9 @@ export default function Marketing() {
 					<Title
 						level={3}
 						className="part-title marketing__part-title"
+						style={{
+							marginBottom: '4rem'
+						}}
 					>
 						Контент-стратегия (типы контента)
 					</Title>
@@ -504,121 +507,35 @@ export default function Marketing() {
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 							>
-								<g filter="url(#filter0_dii_2057_1102)">
-									<rect
-										x="2"
-										y="1"
-										width="48"
-										height="48"
-										rx="10"
-										fill="white"
-									/>
-									<rect
-										x="2.5"
-										y="1.5"
-										width="47"
-										height="47"
-										rx="9.5"
-										stroke="#D5D7DA"
-									/>
-									<path
-										d="M31 27.4996V24.494C31 24.3145 31 24.2248 30.9727 24.1456C30.9485 24.0755 30.9091 24.0117 30.8572 23.9587C30.7986 23.8989 30.7183 23.8587 30.5578 23.7785L26 21.4996M18 22.4996V29.3062C18 29.6781 18 29.8641 18.058 30.0269C18.1093 30.1708 18.1929 30.3011 18.3024 30.4077C18.4262 30.5283 18.5953 30.6057 18.9334 30.7607L25.3334 33.694C25.5786 33.8064 25.7012 33.8626 25.8289 33.8848C25.9421 33.9045 26.0579 33.9045 26.1711 33.8848C26.2988 33.8626 26.4214 33.8064 26.6666 33.694L33.0666 30.7607C33.4047 30.6057 33.5738 30.5283 33.6976 30.4077C33.8071 30.3011 33.8907 30.1708 33.942 30.0269C34 29.8641 34 29.6781 34 29.3062V22.4996M16 21.4996L25.6422 16.6785C25.7734 16.6129 25.839 16.5801 25.9078 16.5672C25.9687 16.5557 26.0313 16.5557 26.0922 16.5672C26.161 16.5801 26.2266 16.6129 26.3578 16.6785L36 21.4996L26.3578 26.3207C26.2266 26.3863 26.161 26.4191 26.0922 26.432C26.0313 26.4434 25.9687 26.4434 25.9078 26.432C25.839 26.4191 25.7734 26.3863 25.6422 26.3207L16 21.4996Z"
-										stroke="#1570EF"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</g>
-								<defs>
-									<filter
-										id="filter0_dii_2057_1102"
-										x="0"
-										y="0"
-										width="52"
-										height="52"
-										filterUnits="userSpaceOnUse"
-										color-interpolation-filters="sRGB"
-									>
-										<feFlood
-											flood-opacity="0"
-											result="BackgroundImageFix"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feOffset dy="1" />
-										<feGaussianBlur stdDeviation="1" />
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.05 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="BackgroundImageFix"
-											result="effect1_dropShadow_2057_1102"
-										/>
-										<feBlend
-											mode="normal"
-											in="SourceGraphic"
-											in2="effect1_dropShadow_2057_1102"
-											result="shape"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feOffset dy="-2" />
-										<feComposite
-											in2="hardAlpha"
-											operator="arithmetic"
-											k2="-1"
-											k3="1"
-										/>
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.05 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="shape"
-											result="effect2_innerShadow_2057_1102"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feMorphology
-											radius="1"
-											operator="erode"
-											in="SourceAlpha"
-											result="effect3_innerShadow_2057_1102"
-										/>
-										<feOffset />
-										<feComposite
-											in2="hardAlpha"
-											operator="arithmetic"
-											k2="-1"
-											k3="1"
-										/>
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.18 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="effect2_innerShadow_2057_1102"
-											result="effect3_innerShadow_2057_1102"
-										/>
-									</filter>
-								</defs>
-							</svg>
+<g filter="url(#filter0_dii_433_837)">
+<rect x="2" y="1" width="48" height="48" rx="10" fill="white"/>
+<rect x="2.5" y="1.5" width="47" height="47" rx="9.5" stroke="#D5D7DA"/>
+<path d="M19 17.9895C19 17.0183 19 16.5328 19.2025 16.2651C19.3789 16.0319 19.6485 15.8876 19.9404 15.8702C20.2754 15.8502 20.6795 16.1195 21.4875 16.6582L32.0031 23.6686C32.6708 24.1137 33.0046 24.3363 33.1209 24.6168C33.2227 24.8621 33.2227 25.1377 33.1209 25.383C33.0046 25.6635 32.6708 25.886 32.0031 26.3312L21.4875 33.3415C20.6795 33.8802 20.2754 34.1496 19.9404 34.1296C19.6485 34.1122 19.3789 33.9679 19.2025 33.7347C19 33.467 19 32.9814 19 32.0103V17.9895Z" stroke="#1570EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_dii_433_837" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_837"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_837" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_433_837"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect3_innerShadow_433_837"/>
+<feOffset/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_433_837" result="effect3_innerShadow_433_837"/>
+</filter>
+</defs>
+</svg>
+
 
 							<div className="marketing-type__title">
 								Развлекательный
@@ -635,126 +552,36 @@ export default function Marketing() {
 						</div>
 						<div className="marketing-type">
 							<svg
-								className="marketing-type__icon"
-								viewBox="0 0 52 52"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<g filter="url(#filter0_dii_2057_865)">
-									<rect
-										x="2"
-										y="1"
-										width="48"
-										height="48"
-										rx="10"
-										fill="white"
-									/>
-									<rect
-										x="2.5"
-										y="1.5"
-										width="47"
-										height="47"
-										rx="9.5"
-										stroke="#D5D7DA"
-									/>
-									<path
-										d="M34.9996 24.5C34.9996 29.1944 31.194 33 26.4996 33C25.4228 33 24.3928 32.7998 23.4448 32.4345C23.2714 32.3678 23.1848 32.3344 23.1159 32.3185C23.0481 32.3029 22.999 32.2963 22.9295 32.2937C22.8588 32.291 22.7813 32.299 22.6262 32.315L17.5052 32.8444C17.0169 32.8948 16.7728 32.9201 16.6288 32.8322C16.5034 32.7557 16.4179 32.6279 16.3952 32.4828C16.3691 32.3161 16.4857 32.1002 16.7191 31.6684L18.3547 28.6408C18.4894 28.3915 18.5568 28.2668 18.5873 28.1469C18.6174 28.0286 18.6247 27.9432 18.6151 27.8214C18.6053 27.6981 18.5512 27.5376 18.443 27.2166C18.1555 26.3636 17.9996 25.45 17.9996 24.5C17.9996 19.8056 21.8052 16 26.4996 16C31.194 16 34.9996 19.8056 34.9996 24.5Z"
-										stroke="#1570EF"
-										stroke-width="2"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									/>
-								</g>
-								<defs>
-									<filter
-										id="filter0_dii_2057_865"
-										x="0"
-										y="0"
-										width="52"
-										height="52"
-										filterUnits="userSpaceOnUse"
-										color-interpolation-filters="sRGB"
-									>
-										<feFlood
-											flood-opacity="0"
-											result="BackgroundImageFix"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feOffset dy="1" />
-										<feGaussianBlur stdDeviation="1" />
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.05 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="BackgroundImageFix"
-											result="effect1_dropShadow_2057_865"
-										/>
-										<feBlend
-											mode="normal"
-											in="SourceGraphic"
-											in2="effect1_dropShadow_2057_865"
-											result="shape"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feOffset dy="-2" />
-										<feComposite
-											in2="hardAlpha"
-											operator="arithmetic"
-											k2="-1"
-											k3="1"
-										/>
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.05 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="shape"
-											result="effect2_innerShadow_2057_865"
-										/>
-										<feColorMatrix
-											in="SourceAlpha"
-											type="matrix"
-											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-											result="hardAlpha"
-										/>
-										<feMorphology
-											radius="1"
-											operator="erode"
-											in="SourceAlpha"
-											result="effect3_innerShadow_2057_865"
-										/>
-										<feOffset />
-										<feComposite
-											in2="hardAlpha"
-											operator="arithmetic"
-											k2="-1"
-											k3="1"
-										/>
-										<feColorMatrix
-											type="matrix"
-											values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.18 0"
-										/>
-										<feBlend
-											mode="normal"
-											in2="effect2_innerShadow_2057_865"
-											result="effect3_innerShadow_2057_865"
-										/>
-									</filter>
-								</defs>
-							</svg>
+								className="marketing-type__icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dii_433_865)">
+<rect x="2" y="1" width="48" height="48" rx="10" fill="white"/>
+<rect x="2.5" y="1.5" width="47" height="47" rx="9.5" stroke="#D5D7DA"/>
+<path d="M34.9996 24.5C34.9996 29.1944 31.194 33 26.4996 33C25.4228 33 24.3928 32.7998 23.4448 32.4345C23.2714 32.3678 23.1848 32.3344 23.1159 32.3185C23.0481 32.3029 22.999 32.2963 22.9295 32.2937C22.8588 32.291 22.7813 32.299 22.6262 32.315L17.5052 32.8444C17.0169 32.8948 16.7728 32.9201 16.6288 32.8322C16.5034 32.7557 16.4179 32.6279 16.3952 32.4828C16.3691 32.3161 16.4857 32.1002 16.7191 31.6684L18.3547 28.6408C18.4894 28.3915 18.5568 28.2668 18.5873 28.1469C18.6174 28.0286 18.6247 27.9432 18.6151 27.8214C18.6053 27.6981 18.5512 27.5376 18.443 27.2166C18.1555 26.3636 17.9996 25.45 17.9996 24.5C17.9996 19.8056 21.8052 16 26.4996 16C31.194 16 34.9996 19.8056 34.9996 24.5Z" stroke="#1570EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_dii_433_865" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0509804 0 0 0 0 0.0705882 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_433_865"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_433_865" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_433_865"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect3_innerShadow_433_865"/>
+<feOffset/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.0496732 0 0 0 0 0.0705882 0 0 0 0.18 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_433_865" result="effect3_innerShadow_433_865"/>
+</filter>
+</defs>
+</svg>
+
 
 							<div className="marketing-type__title">
 								Вовлекающий
@@ -951,36 +778,12 @@ export default function Marketing() {
 						</div>
 						<div className="marketing-tool">
 							<svg
-								className="marketing-tool__icon"
-								viewBox="0 0 56 56"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<rect
-									x="4"
-									y="4"
-									width="48"
-									height="48"
-									rx="24"
-									fill="#D1E9FF"
-								/>
-								<rect
-									x="4"
-									y="4"
-									width="48"
-									height="48"
-									rx="24"
-									stroke="#EFF8FF"
-									stroke-width="8"
-								/>
-								<path
-									d="M25 31.5H23.5C22.1044 31.5 21.4067 31.5 20.8389 31.6722C19.5605 32.06 18.56 33.0605 18.1722 34.3389C18 34.9067 18 35.6044 18 37M30.5 23.5C30.5 25.9853 28.4853 28 26 28C23.5147 28 21.5 25.9853 21.5 23.5C21.5 21.0147 23.5147 19 26 19C28.4853 19 30.5 21.0147 30.5 23.5ZM27 37L30.1014 36.1139C30.2499 36.0715 30.3241 36.0502 30.3934 36.0184C30.4549 35.9902 30.5134 35.9558 30.5679 35.9158C30.6293 35.8707 30.6839 35.8161 30.7932 35.7068L37.25 29.25C37.9404 28.5597 37.9404 27.4403 37.25 26.75C36.5597 26.0596 35.4404 26.0596 34.75 26.75L28.2932 33.2068C28.1839 33.3161 28.1293 33.3707 28.0842 33.4321C28.0442 33.4866 28.0098 33.5451 27.9816 33.6066C27.9497 33.6759 27.9285 33.7501 27.8861 33.8987L27 37Z"
-									stroke="#1570EF"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
+								className="marketing-tool__icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="4" width="48" height="48" rx="24" fill="#D1E9FF"/>
+<rect x="4" y="4" width="48" height="48" rx="24" stroke="#EFF8FF" stroke-width="8"/>
+<path d="M32 22L35 19M35 19L38 22M35 19V25M32 37V35.8C32 34.1198 32 33.2798 31.673 32.638C31.3854 32.0735 30.9265 31.6146 30.362 31.327C29.7202 31 28.8802 31 27.2 31H22.8C21.1198 31 20.2798 31 19.638 31.327C19.0735 31.6146 18.6146 32.0735 18.327 32.638C18 33.2798 18 34.1198 18 35.8V37M28.5 23.5C28.5 25.433 26.933 27 25 27C23.067 27 21.5 25.433 21.5 23.5C21.5 21.567 23.067 20 25 20C26.933 20 28.5 21.567 28.5 23.5Z" stroke="#1570EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
 							<div className="marketing-tool__title">
 								Количество квалифицированных лидов для продажи
 								B2B

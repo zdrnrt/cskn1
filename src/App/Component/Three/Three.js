@@ -1,8 +1,7 @@
 import React from "react";
 import { Typography, Button } from "antd";
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 import "./Three.scss";
-import Tile from "../../Shared/Tile"
 import Icons from "../../Icon";
 
 const b2c = [

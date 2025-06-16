@@ -1,15 +1,16 @@
 .five {
+  padding-top: 14rem;
   background-color: var(--cl-bg-section);
 
   .five__title {
-    margin-bottom: 4.5rem;
+    margin-bottom: 6rem;
   }
 
   .five__part-title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     @media (min-width: 1200px) {
-      margin-bottom: 4rem;
+      // margin-bottom: 3rem;
     }
   }
 
@@ -104,7 +105,7 @@
   }
 
   &__funnel {
-    margin-bottom: 3.5rem;
+    margin-bottom: 6rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
@@ -136,8 +137,9 @@
     }
     
     @media (min-width: 1200px) {
-      column-gap: 2rem;
+      column-gap: 6rem;
       margin-bottom: 7rem;
+      row-gap: 6rem;
     }
 
     &--last {
@@ -185,7 +187,7 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     @media (min-width: 768px) {
       padding-left: 1rem;

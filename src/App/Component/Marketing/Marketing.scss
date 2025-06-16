@@ -1,15 +1,9 @@
 .marketing {
+  padding-top: 9rem !important;
+
   .marketing__title {
     max-width: 770px;
-    margin: 0 auto 4rem;
-
-    @media (min-width: 768px) {
-      margin-bottom: 4rem;
-    }
-
-    @media (min-width: 1200px) {
-      margin-bottom: 6rem;
-    }
+    margin: 0 auto 4.5rem;
   }
 
   .marketing__part-title {
@@ -20,7 +14,7 @@
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 4rem;
+      margin-bottom: 6rem;
     }
   }
 
@@ -34,13 +28,11 @@
     gap: 2rem;
 
     @media (min-width: 768px) {
-      margin-bottom: 5rem;
-      gap: 4rem;
+      margin-bottom: 10rem;
+      gap: 3rem;
     }
 
-    @media (min-width: 1200px) {
-      gap: 6rem;
-    }
+    @media (min-width: 1200px) {}
 
     &--stack {
       margin-bottom: 0;
@@ -62,13 +54,13 @@
     }
 
     @media (min-width: 1024px) {
-      column-gap: 2rem;
-      row-gap: 3rem;
+      column-gap: 5rem;
+      row-gap: 6rem;
 
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 7rem;
+      margin-bottom: 10rem;
     }
   }
 
@@ -110,19 +102,19 @@
   }
 
   &__video {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     @media (min-width: 768px) {
-      margin-bottom: 4rem;
+      // margin-bottom: 4rem;
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 6rem;
+      // margin-bottom: 6rem;
     }
   }
 
   &__controls {
-    margin-bottom: 2rem;
+    margin-bottom: 10rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -130,11 +122,11 @@
     gap: 12px;
 
     @media (min-width: 768px) {
-      margin-bottom: 4rem;
+      // margin-bottom: 4rem;
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 6rem;
+      // margin-bottom: 6rem;
     }
 
   }
@@ -243,6 +235,7 @@
   }
 
   &__list {
+    padding-left: 10px;
     color: var(--cl-secondary);
     line-height: 1.5;
   }
@@ -270,7 +263,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 12px;
-    
+
     @media (min-width: 1024px) {
       align-items: center;
       padding-left: 1rem;
@@ -357,7 +350,7 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    padding: 2rem;
+    padding: 3rem;
     flex: 1 0 45%;
   }
 
@@ -378,7 +371,10 @@
   }
 
   &__list {
+    width: fit-content;
+    margin: 0 auto;
     color: var(--cl-secondary);
     line-height: 1.5;
+    text-align: start;
   }
 }

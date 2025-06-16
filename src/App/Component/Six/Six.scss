@@ -1,4 +1,5 @@
 .six {
+  padding-top: 7rem!important;
   .six__title {
     margin-bottom: 4rem;
 
@@ -9,6 +10,9 @@
     @media (min-width: 1200px) {
       margin-bottom: 6rem;
     }
+  }
+  .six__part-title{
+    margin-bottom: 6rem;
   }
 
   &__subtitle {
