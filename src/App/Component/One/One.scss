@@ -17,7 +17,6 @@
   & .one__title {
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
-    font-weight: 700;
     text-align: center;
     line-height: 1.2;
 
@@ -44,8 +43,8 @@
 
   & .one__text {
     margin-bottom: 2rem;
-    // color: var(--cl-secondary);
-    font-size: 1.5rem;
+    color: var(--cl-secondary);
+    font-size: 1.5rem!important;
     text-align: center;
   }
 
@@ -81,7 +80,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 12px;
   }
 }
 

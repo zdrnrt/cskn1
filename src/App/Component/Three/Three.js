@@ -194,6 +194,7 @@ export default function Three() {
           <div className="three__list">
             {unique.map( (el, i) => (
               <div key={i} className="three-unique">
+                
                 <div className="three-unique__icon">
                   <img src={Icons[el.icon]} className="three-unique__pic"/>
                 </div>

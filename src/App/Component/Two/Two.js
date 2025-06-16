@@ -13,20 +13,39 @@ const problem = [
 
     {
       title: '25% ВВП',
-      description: 'размер проблемы в масштабах страны'
+      description: 'размер проблемы <br/>в масштабах страны'
     },
     {
       title: '25+ млн',
-      description: 'человек в критической долговой ситуации'
+      description: 'человек <br/>в критической ситуации'
     },
     {
       title: '18+ млн',
-      description: 'человек регулярно берут микрозаймы '
+      description: 'человек регулярно <br/>берут микрозаймы '
     },
   {
     title: '3.5 трлн',
     description: '₽ уже на взыскании у банков'
   }
+];
+
+const problem2 = [
+    {
+      title: '20%',
+      description: 'ежегодный рост затрат на <br/>привлечение клиентов'
+    },
+    {
+      title: '15%',
+      description: 'ежегодный рост нецелевых <br/>обращений'
+    },
+    {
+      title: 'Ср. 4%',
+      description: 'снижение конверсии <br/>в продажи'
+    },
+    {
+      title: '9 тыс руб',
+      description: 'высокая стоимость стоимость <br/>клиентов'
+    },
 ];
 
 export default function Two(){
@@ -49,6 +68,18 @@ export default function Two(){
             <li className="two__list-item">Юристы — сразу банкротство</li>
           </ol>
         </div>
+
+        <img src={Icon.attention} className="two__title-icon" />
+        <Title className="subtitle two__title" level={2}>Проблема B2C: <br/>Поступательное снижение рентабельности</Title>
+        <div className="two__problems two__problems--2">
+          {problem2.map( (el, i) => <Tile key={i} data={el} />)}
+        </div>
+        <Paragraph className="two__description">
+            Рост стоимости привлечения клиентов + падение конверсии = <span className="two__description--marked">ежегодное снижение рентабельности</span>
+            <br/>
+            <br/>
+          </Paragraph>
+
       </div>
 
     </section>

@@ -22,7 +22,8 @@ export default function Tile(props) {
         {icon && <Icon name={icon}/>}
         {title}
       </div>
-      {description && <p className="tile__description">{description}</p>}
+      {/* {description && <p className="tile__description" dangerouslySetInnerHTML={description}></p>} */}
+      {description && <p className="tile__description" dangerouslySetInnerHTML={{ __html: description }} ></p>}
       {stepsList && <ul className="tile__list">{stepsList}</ul>}
     </div>
   );

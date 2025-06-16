@@ -95,6 +95,8 @@
     margin: 0;
     line-height: 1.2;
     font-weight: 600;
+    // letter-spacing: -0.02em;
+    letter-spacing: 2px;
     &--icon{
       display: flex;
       flex-flow: row nowrap;
@@ -106,7 +108,7 @@
   &__description{
     font-size: 1.125rem;
     margin: 0;
-    color: var(--cl-secondary);
+    color: var(--cl-primary);
   }
   &__list{
     margin: 0;

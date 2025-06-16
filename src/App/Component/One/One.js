@@ -7,7 +7,7 @@ import "./One.scss";
 
 const plusesList = [
   {
-    title: '25+ млн',
+    title: '25+',
     description: 'млн потенциальных клиентов'
   },
   { 
@@ -34,7 +34,7 @@ export default function One(){
           </div>
         </div>
         <div className="one__description">
-          <Paragraph type='secondary' className="one__text"><Text>Создаём индустрию антикризисного консалтинга для физлиц на рынке объемом 14.5 трлн рублей</Text></Paragraph>
+          <Paragraph type='secondary' className="one__text">Создаём индустрию антикризисного <br/>консалтинга для физлиц на рынке объемом<br/> 14.5 трлн рублей</Paragraph>
           <div className="one__pluses">{pluses}</div>
           </div>
         </div>
