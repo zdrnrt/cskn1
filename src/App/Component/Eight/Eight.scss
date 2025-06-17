@@ -1,4 +1,5 @@
 .eight {
+  background-color: var(--cl-bg-section);
   .eight__title {
     margin-bottom: 4rem;
   }
@@ -21,14 +22,14 @@
     gap: 2rem;
 
     @media (min-width: 768px) {
-      margin-bottom: 5px;
+      margin-bottom: 5rem;
       flex-direction: row;
       justify-content: center;
       gap: 3rem;
     }
 
     @media (min-width: 1200px) {
-      margin-bottom: 7px;
+      margin-bottom: 7rem;
       gap: 4rem;
     }
   }
@@ -70,6 +71,7 @@
   }
 
   &__list {
+    padding-left: 10px;
     font-weight: 400;
     font-size: 1.125rem;
 
@@ -80,12 +82,14 @@
 }
 
 .eight-result {
+  padding-left: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
   gap: 0.8rem;
-
+  color: #535862;
+  font-size: 1.125rem;
   &__icon {
     width: 28px;
     flex-shrink: 0;
