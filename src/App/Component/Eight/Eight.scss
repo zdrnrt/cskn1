@@ -82,7 +82,7 @@
 }
 
 .eight-result {
-  padding-left: 20px;
+  // padding-left: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -90,6 +90,9 @@
   gap: 0.8rem;
   color: #535862;
   font-size: 1.125rem;
+  @media (min-width: 768px) {
+    padding-left: 20px;
+  }
   &__icon {
     width: 28px;
     flex-shrink: 0;

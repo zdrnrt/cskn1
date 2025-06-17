@@ -138,10 +138,11 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 1rem;
+    // gap: 1rem;
+    gap: 2rem;
 
     @media (min-width: 768px) {
-      gap: 2rem;
+      // gap: 2rem;
     }
 
     @media (min-width: 1200px) {
@@ -345,12 +346,12 @@
   position: relative;
   margin-top: 1.5rem;
   flex: 1 0 100%;
-  padding: 1rem;
+  padding: 3rem 1rem;
   background: var(--cl-bg-section);
   text-align: center;
 
   @media (min-width: 768px) {
-    padding: 3rem;
+    // padding: 3rem;
     flex: 1 0 45%;
   }
 

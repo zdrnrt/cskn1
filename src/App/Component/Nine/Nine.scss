@@ -12,7 +12,9 @@
       margin-bottom: 3rem;
     }
   }
-
+  &__content{
+    overflow: hidden;
+  }
   &__controls {
     display: flex;
     flex-flow: row wrap;
@@ -67,6 +69,10 @@
     align-items: flex-start;
     gap: 2rem;
 
+    @media (max-width: 1199px) {
+      position: relative;
+      padding-left: 30px;
+    }
     @media (min-width: 768px) {
       justify-content: space-around;
     }
@@ -74,11 +80,28 @@
     @media (min-width: 1200px) {
       margin-bottom: 6rem;
     }
+    @media (min-width: 1600px) {
+      justify-content: space-between;
+    }
 
     br {
       @media (max-width: 767px) {
         display: none;
       }
+    }
+    &::before{
+    @media (max-width: 1199px) {
+
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 8px;
+      height: 100%;
+      background: linear-gradient(248deg, #1570ef 0%, #1570ef 100%);
+      opacity: 0.1;
+
+    }
     }
   }
 
