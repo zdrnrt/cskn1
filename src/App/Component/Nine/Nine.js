@@ -5,9 +5,11 @@ import './Nine.scss';
 
 const stages = [
 	{
+		start: true,
 		title: 'Год 1: запуск и разработка',
 		steps: [
 			{
+				start: true,
 				position: 'bottom',
 				title: 'Месяц 1-4:',
 				steps: [
@@ -88,9 +90,8 @@ const stages = [
 ];
 
 function Stage({ props }) {
-	console.log(props.steps);
 	const stepsList = props.steps.map((el, i) => (
-		<div key={i} className={'stage-step stage-step--' + el.position}>
+		<div key={i} className={'stage-step stage-step--' + el.position + ' ' + (el.start ? 'stage-step--start' : '') }>
 			<div className="stage-step__title">{el.title}</div>
 			<ul className="stage-step__list">
 				{el.steps.map((el, i) => (
@@ -102,7 +103,7 @@ function Stage({ props }) {
 		</div>
 	));
 	return (
-		<div className="nine__stage stage">
+		<div className={"nine__stage stage " + (props.start ? 'stage--start' : '')} >
 			<div className="container">
 				<Title level={4} className="stage__title">
 					{props.title}
