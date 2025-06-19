@@ -33,12 +33,12 @@
     font-size: 1.25rem;
     color: var(--cl-secondary);
     text-align: center;
+    font-weight: 300;
   }
 
   &__description--marked {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: #e62e05;
+    border-bottom: 2px solid #e62e05;
   }
 
   &__problems {
@@ -97,5 +97,6 @@
   &__list-item {
     font-size: 1.25rem;
     text-align: center;
+    font-weight: 300;
   }
 }

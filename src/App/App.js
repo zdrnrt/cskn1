@@ -36,10 +36,8 @@ export default function App() {
           colorLink: '#535862',
           colorLinkHover: '#a4a7ae',
           colorSuccess: '#099250',
-          // colorTextSecondary: '#535862'
-          colorTextSecondary: 'red',
-          colorTextDescription: 'blue',
-          lineHeight: 1.2
+          lineHeight: 1.2,
+          colorPrimaryHover: '#0852b8',
         },
         components: {
           Typography: {

@@ -1,18 +1,22 @@
 .footer {
   background-color: var(--cl-bg-section);
 
-  .footer__content {
+  &__content {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 3rem;
+    gap: 2rem;
 
     @media (min-width: 1200px) {
       flex-flow: row nowrap;
       justify-content: space-between;
       gap: 1.5rem;
     }
+    @media (min-width: 1440px) {
+      justify-content: center;
+    }
+
   }
 
   // &__info{
@@ -56,7 +60,7 @@
     @media (min-width: 1200px) {
       margin-left: 1.5rem;
       // flex-basis: 20.25rem;
-      flex: 1 0 0%;
+      flex: 0 0 370px;
     }
   }
 }
@@ -64,7 +68,7 @@
 .footer-contacts {
   .footer-contacts__title {
     // margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
     font-weight: 500;
     color: var(--cl-secondary);
   }

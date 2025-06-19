@@ -1,6 +1,6 @@
 .five {
   padding-top: 14rem;
-  background-color: var(--cl-bg-section);
+  // background-color: var(--cl-bg-section);
 
   .five__title {
     margin-bottom: 6rem;
@@ -163,11 +163,13 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   color: var(--cl-secondary);
   font-size: 1.125rem;
-
+  @media (min-width: 768px) {
+    align-items: center;
+  }
   &__icon {
     width: 23px;
     flex-shrink: 0;

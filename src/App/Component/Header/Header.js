@@ -6,6 +6,7 @@ const { Link } = Typography;
 import logo from './assets/logo.svg';
 import logoText from './assets/logo-text.svg';
 import Icons from '../../Icon';
+import qr from '../../../img/qr.png';
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -152,6 +153,9 @@ export default function Header() {
 							</Link>{' '}
 						</li>
 					</ul>
+					<div className="footer-contacts__qr">
+												<img src={qr} alt="qr"></img>
+											</div>
 				</div>
 			</div>
 		</>

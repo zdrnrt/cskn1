@@ -16,6 +16,11 @@
     @media (min-width: 1200px) {
       margin-bottom: 6rem;
     }
+    &--founder{
+      @media (min-width: 1200px) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__plans {
@@ -349,7 +354,7 @@
   padding: 3rem 1rem;
   background: var(--cl-bg-section);
   text-align: center;
-
+  border-radius: 1rem;
   @media (min-width: 768px) {
     // padding: 3rem;
     flex: 1 0 45%;

@@ -172,8 +172,8 @@ export default function Three() {
                 <div className="three-tile__number">{i + 1}</div>
                 <div className="three-tile__title">{el.title}</div>
                 <ul className="three-tile__list">
-                  {el.steps.map((elem) => (
-                    <li className="three-tile__list-item">{elem}</li>
+                  {el.steps.map((elem, i) => (
+                    <li key={i} className="three-tile__list-item">{elem}</li>
                   ))}
                 </ul>
               </div>
@@ -190,7 +190,7 @@ export default function Three() {
             ))}
           </div>
           <Title level={3} className="part-title three__part-title">Уникальные преимущества</Title>
-          <div className="three__list">
+          <div className="three__list three__list--uniq">
             {unique.map( (el, i) => (
               <div key={i} className="three-unique">
                 

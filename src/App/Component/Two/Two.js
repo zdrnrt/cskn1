@@ -70,7 +70,7 @@ export default function Two(){
         </div>
 
         <img src={Icon.attention} className="two__title-icon" />
-        <Title className="subtitle two__title" level={2}>Проблема B2C: <br/>Поступательное снижение рентабельности</Title>
+        <Title className="subtitle two__title" level={2}>Проблема B2B: <br/>Поступательное снижение рентабельности</Title>
         <div className="two__problems two__problems--2">
           {problem2.map( (el, i) => <Tile key={i} data={el} />)}
         </div>

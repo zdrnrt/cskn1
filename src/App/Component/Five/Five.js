@@ -146,7 +146,7 @@ export default function Five() {
 						</div>
 						<div className="five-step five__step">
 							<div className="five-step__title">
-								2.Консультация
+								2. Консультация
 							</div>
 							<div className="five-step__item">
 								<svg
@@ -288,8 +288,8 @@ export default function Five() {
 									/>
 								</svg>
 								<p className="five-step__text">
-									Физические лица в возрасте от 22 до 65 лет,
-									с долговой нагрузкой >60% от ежемесячных
+									Физические лица в возрасте от 22 до <br/>65 лет,
+									с долговой нагрузкой >60% от <br/>ежемесячных
 									доходов
 								</p>
 							</div>
@@ -379,7 +379,7 @@ export default function Five() {
 									/>
 								</svg>
 								<p className="five-step__text">
-									Кредитные организации (банки, КПК, Кредитные
+									Кредитные организации (банки, КПК, <br/>Кредитные
 									брокеры)
 								</p>
 							</div>
@@ -399,7 +399,7 @@ export default function Five() {
 									/>
 								</svg>
 								<p className="five-step__text">
-									Юридические фирмы (банкротство,
+									Юридические фирмы (банкротство, <br/>
 									реструктуризация, защита прав)
 								</p>
 							</div>
