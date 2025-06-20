@@ -7,6 +7,29 @@ import t1 from '../../../img/team/t1-f.jpg';
 import qr from '../../../img/qr.png';
 
 export default function Footer() {
+	const MATERIALS = [
+		{
+			title: 'Тизер',
+			link: '/files/cskn1-teaser.pdf',
+		},
+		{
+			title: 'Инвестиционная презентация',
+			link: '/files/cskn1-invest-presentation.pdf',
+		},
+		{
+			title: 'Питчдек',
+			link: '/files/cskn1-pitchdeck.pdf',
+		},
+		{
+			title: 'Финдек',
+			link: '/files/cskn1-findek.pdf',
+		},
+		{
+			title: 'Финансовая модель',
+			link: '/files/',
+		},
+	];
+
 	return (
 		<footer className="footer section">
 			<div className="container ">
@@ -69,48 +92,14 @@ export default function Footer() {
 						<Title level={4} className="footer-materials__title">
 							Дополнительные материалы
 						</Title>
-						<ul className="footer-materials__list">
-							<li>
-								<Button
-									type="link"
-									href="./files/cskn1-file.zip"
-								>
-									Тизер
+						<ul className="footer-materials__list"></ul>
+						{MATERIALS.map((el, i) => (
+							<li key={i}>
+								<Button type="link" href={el.link}>
+									{el.title}
 								</Button>
 							</li>
-							<li>
-								<Button
-									type="link"
-									href="./files/cskn1-file.zip"
-								>
-									Инвестиционная презентация
-								</Button>
-							</li>
-							<li>
-								<Button
-									type="link"
-									href="./files/cskn1-file.zip"
-								>
-									Питчдек
-								</Button>
-							</li>
-							<li>
-								<Button
-									type="link"
-									href="./files/cskn1-file.zip"
-								>
-									Финдек
-								</Button>
-							</li>
-							<li>
-								<Button
-									type="link"
-									href="./files/cskn1-file.zip"
-								>
-									Финансовая модель
-								</Button>
-							</li>
-						</ul>
+						))}
 						{/* <div>
             <Button type="link" href="./files/cskn1-file.zip" size="large">Скачать материалы</Button>
           </div> */}
