@@ -2,10 +2,20 @@ import React from 'react';
 import { Typography, Button } from 'antd';
 const { Title } = Typography;
 import './Six.scss';
+import * as motion from 'motion/react-client';
 
 export default function Six() {
 	return (
-		<section className="six section">
+		<motion.section
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 0.5 }}
+			viewport={{
+				once: true,
+				amount: 0.2, // Срабатывает когда 20% элемента видно
+			}}
+			className="six section"
+		>
 			<div className="container">
 				<div className="six__content">
 					<Title level={3} className="part-title six__part-title">
@@ -337,6 +347,6 @@ export default function Six() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }

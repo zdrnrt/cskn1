@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Button } from 'antd';
 const { Title } = Typography;
 import './Seven.scss';
+import * as motion from 'motion/react-client';
 
 import t1 from '../../../img/team/t1-2.jpg';
 import t2 from '../../../img/team/t2-2.jpg';
@@ -275,33 +276,73 @@ export default function Seven() {
 		<section className="seven section">
 			<div className="container">
 				<div className="seven__content">
-					<Title level={2} className="subtitle seven__title">
-						Команда, создающая будущее антикризисного консалтинга
-					</Title>
-					<Title level={3} className="part-title seven__part-title">
-						Основатель
-					</Title>
-					<div className="seven__workers founder">
-						<Founder props={founder} />
-					</div>
-					<Title level={3} className="part-title seven__part-title">
-						Ключевая команда
-					</Title>
-					<div className="seven__workers">{teamList}</div>
-					<Title level={3} className="part-title seven__part-title">
-						План развития команды
-					</Title>
-					<div className="seven__plans">{planList}</div>
-					<div className="seven__controls">
-						<Button
-							type="primary"
-							size="large"
-							href="https://wa.me/message/CG4TEM4HZBQQA1"
-							target="_blank"
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 0.5 }}
+						viewport={{
+							once: true,
+							amount: 0.2, // Срабатывает когда 20% элемента видно
+						}}
+					>
+						<Title level={2} className="subtitle seven__title">
+							Команда, создающая будущее антикризисного
+							консалтинга
+						</Title>
+						<Title
+							level={3}
+							className="part-title seven__part-title"
 						>
-							Написать основателю
-						</Button>
-					</div>
+							Основатель
+						</Title>
+						<div className="seven__workers founder">
+							<Founder props={founder} />
+						</div>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 0.5 }}
+						viewport={{
+							once: true,
+							amount: 0.2, // Срабатывает когда 20% элемента видно
+						}}
+					>
+						<Title
+							level={3}
+							className="part-title seven__part-title"
+						>
+							Ключевая команда
+						</Title>
+						<div className="seven__workers">{teamList}</div>
+					</motion.div>
+					<motion.div
+						initial={{ opacity: 0 }}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 0.5 }}
+						viewport={{
+							once: true,
+							amount: 0.2, // Срабатывает когда 20% элемента видно
+						}}
+					>
+						<Title
+							level={3}
+							className="part-title seven__part-title"
+						>
+							План развития команды
+						</Title>
+						<div className="seven__plans">{planList}</div>
+						<div className="seven__controls">
+							<Button
+								type="primary"
+								size="large"
+								href="https://wa.me/message/CG4TEM4HZBQQA1"
+								target="_blank"
+							>
+								Написать основателю
+							</Button>
+						</div>
+					</motion.div>
 				</div>
 			</div>
 		</section>

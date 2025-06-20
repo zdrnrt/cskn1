@@ -50,15 +50,19 @@ const problem2 = [
 ];
 
 export default function Two() {
-	const problemList = problem.map((el, i) => <Tile key={i} data={el} />);
+	const problemList = problem.map((el, i) => <Tile data={el} />);
 	return (
-		<motion.div
-			initial={{ opacity: 0 }}
-			whileInView={{ opacity: 1 }}
-			viewport={{ once: true }}
-		>
-			<section className="two section">
-				<div className="container">
+		<section className="two section">
+			<div className="container">
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+					viewport={{
+						once: true,
+						amount: 0.2, // Срабатывает когда 20% элемента видно
+					}}
+				>
 					<div className="two__content">
 						<img src={Icon.attention} className="two__title-icon" />
 						<Title className="subtitle two__title" level={2}>
@@ -82,7 +86,16 @@ export default function Two() {
 							</li>
 						</ol>
 					</div>
-
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.5 }}
+					viewport={{
+						once: true,
+						amount: 0.2, // Срабатывает когда 20% элемента видно
+					}}
+				>
 					<img src={Icon.attention} className="two__title-icon" />
 					<Title className="subtitle two__title" level={2}>
 						Проблема B2B: <br />
@@ -102,8 +115,8 @@ export default function Two() {
 						<br />
 						<br />
 					</Paragraph>
-				</div>
-			</section>
-		</motion.div>
+				</motion.div>
+			</div>
+		</section>
 	);
 }

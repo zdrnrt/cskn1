@@ -3,6 +3,7 @@ import { Typography, Button } from "antd";
 const { Title } = Typography;
 import "./Three.scss";
 import Icons from "../../Icon";
+import * as motion from 'motion/react-client';
 
 const b2c = [
   {
@@ -50,41 +51,6 @@ const b2b = [
     title: 'Продажа услуг и экспертности партнера'
   },
 ]
-
-const steps = [
-  {
-    title: "1. Автоматическая диагностика",
-    steps: [
-      "AI-анализ финансового состояния.",
-      "Оценка кредитной нагрузки.",
-      "Выявление первопричин проблем.",
-    ],
-  },
-  {
-    title: "2. Персональный план",
-    steps: [
-      "Разработка стратегии.",
-      "Пошаговый алгоритм действий.",
-      "Расчет сроков и результатов.",
-    ],
-  },
-  {
-    title: "3. Подбор специалистов",
-    steps: [
-      "Проверенные партнеры.",
-      "Оптимальные решения.",
-      "Контроль качества услуг.",
-    ],
-  },
-  {
-    title: "4. Сопровождение",
-    steps: [
-      "Мониторинг реализации.",
-      "Корректировка плана.",
-      "Поддержка 24/7.",
-    ],
-  },
-];
 
 const stack = [
   {
@@ -148,19 +114,22 @@ const unique = [
   },
 ];
 
-function Arrow(){
-  return (
-    <div className="three__arrow">
-      <img src={Icons.arrow} alt=""></img>
-    </div>
-  )
-}
 
 export default function Three() {
   return (
+    
     <section className="three section">
       <div className="container">
         <div className="three__content">
+          <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{
+            once: true,
+            amount: 0.1, // Срабатывает когда 20% элемента видно
+          }}
+        >
           <Title level={2} className="subtitle three__title">
             AI Финансовый Терапевт: <br/>революционный подход к оптимизации долговой нагрузки граждан&nbsp;и лидогенерации для B2B партнеров
           </Title>
@@ -179,6 +148,16 @@ export default function Three() {
               </div>
             ))}
           </div>
+          </motion.div>
+          <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{
+                      once: true,
+                      amount: 0.2, // Срабатывает когда 20% элемента видно
+                    }}
+                  >
           <Title level={4} className="three__subtitle">Состав продукта для B2B <br/>(для B2B клиентов проект является агрегатором лидов):</Title>
           <p className="three__text">Поставка высоко конверсионных лидов (на 26% выше среднего)</p>
           <div className="three__list three__list">
@@ -189,6 +168,16 @@ export default function Three() {
               </div>
             ))}
           </div>
+          </motion.div>
+          <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{
+                      once: true,
+                      amount: 0.2, // Срабатывает когда 20% элемента видно
+                    }}
+                  >
           <Title level={3} className="part-title three__part-title">Уникальные преимущества</Title>
           <div className="three__list three__list--uniq">
             {unique.map( (el, i) => (
@@ -205,6 +194,16 @@ export default function Three() {
           <div className="three__controls">
             <Button type="primary" size="large" href="https://wa.me/message/CG4TEM4HZBQQA1" target="_blank">Написать основателю</Button>
           </div>
+          </motion.div>
+          <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    viewport={{
+                      once: true,
+                      amount: 0.2, // Срабатывает когда 20% элемента видно
+                    }}
+                  >
           <Title level={3} className="part-title three__part-title">Технологический стек</Title>
           <div className="three__list three__list--stack">
             {stack.map( (el, i) => (
@@ -219,6 +218,7 @@ export default function Three() {
               </div>
             ))}
           </div>
+          </motion.div>
         </div>
       </div>
     </section>

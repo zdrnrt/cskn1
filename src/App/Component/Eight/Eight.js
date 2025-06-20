@@ -3,6 +3,7 @@ import { Typography } from 'antd';
 import Icons from '../../Icon';
 const { Title } = Typography;
 import './Eight.scss';
+import * as motion from 'motion/react-client';
 
 const unit = [
 	{
@@ -27,7 +28,16 @@ const unit = [
 
 export default function Eight() {
 	return (
-		<section className="eight section">
+		<motion.section
+			className="eight section"
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 0.5 }}
+			viewport={{
+				once: true,
+				amount: 0.2, // Срабатывает когда 20% элемента видно
+			}}
+		>
 			<div className="container">
 				<div className="eight__content">
 					<Title level={2} className="subtitle eight__title">
@@ -82,6 +92,6 @@ export default function Eight() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Button } from 'antd';
 const { Title } = Typography;
 import './Nine.scss';
+import * as motion from 'motion/react-client';
 
 const stages = [
 	{
@@ -91,26 +92,46 @@ const stages = [
 
 function Stage({ props }) {
 	const stepsList = props.steps.map((el, i) => (
-		<div key={i} className={'stage-step stage-step--' + el.position + ' ' + (el.start ? 'stage-step--start' : '') }>
+		<div
+			key={i}
+			className={
+				'stage-step stage-step--' +
+				el.position +
+				' ' +
+				(el.start ? 'stage-step--start' : '')
+			}
+		>
 			<div className="stage-step__title">{el.title}</div>
 			<ul className="stage-step__list">
 				{el.steps.map((el, i) => (
 					<li key={i} className="stage-step__item">
-						&bull; <span dangerouslySetInnerHTML={{ __html: el }}></span>
+						&bull;{' '}
+						<span dangerouslySetInnerHTML={{ __html: el }}></span>
 					</li>
 				))}
 			</ul>
 		</div>
 	));
 	return (
-		<div className={"nine__stage stage " + (props.start ? 'stage--start' : '')} >
+		<motion.div
+			className={
+				'nine__stage stage ' + (props.start ? 'stage--start' : '')
+			}
+			initial={{ opacity: 0 }}
+			whileInView={{ opacity: 1 }}
+			transition={{ duration: 0.5 }}
+			viewport={{
+				once: true,
+				amount: 0.2, // Срабатывает когда 20% элемента видно
+			}}
+		>
 			<div className="container">
 				<Title level={4} className="stage__title">
 					{props.title}
 				</Title>
 				<div className="stage__list">{stepsList}</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 
