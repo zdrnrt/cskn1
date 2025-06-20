@@ -34,7 +34,8 @@ export default function App() {
           colorLink: '#535862',
           colorTextHeading: '#181d27',
           colorLink: '#535862',
-          colorLinkHover: '#a4a7ae',
+          colorLinkHover: '#252B37',
+          // colorDef
           colorSuccess: '#099250',
           lineHeight: 1.2,
           colorPrimaryHover: '#0852b8',
@@ -58,7 +59,9 @@ export default function App() {
           Button: {
             paddingBlockLG: 10,
             paddingInlineLG: 16,
-            contentFontSizeLG: 16
+            contentFontSizeLG: 16,
+            defaultHoverBg: '#F9F9F9',
+            defaultHoverColor: '#252B37'
           }
         },
       }}

@@ -102,6 +102,11 @@
 
   &__controls {
     text-align: center;
+    a{
+      @media (max-width: 549px) {
+        width: 70%;
+      }
+    }
   }
 
   &__funnel {

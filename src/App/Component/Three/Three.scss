@@ -69,6 +69,11 @@
   &__controls{
     margin-bottom: 3rem;
     text-align: center;
+    a{
+      @media (max-width: 549px) {
+        width: 70%;
+      }
+    }
     @media (min-width: 768px) {
       margin-bottom: 5rem;
     }
